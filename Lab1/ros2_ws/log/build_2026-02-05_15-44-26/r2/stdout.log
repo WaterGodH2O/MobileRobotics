@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/r2/r2.egg-info/PKG-INFO
+writing dependency_links to ../../build/r2/r2.egg-info/dependency_links.txt
+writing entry points to ../../build/r2/r2.egg-info/entry_points.txt
+writing requirements to ../../build/r2/r2.egg-info/requires.txt
+writing top-level names to ../../build/r2/r2.egg-info/top_level.txt
+reading manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+writing manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+running build
+running build_py
+copying r2/subscriber.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+copying r2/publisher.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+running install
+running install_lib
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2/subscriber.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2/publisher.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2/subscriber.py to subscriber.cpython-38.pyc
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2/publisher.py to publisher.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/r2/r2.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2-0.0.0-py3.8.egg-info
+running install_scripts
+Installing prt script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/r2
+Installing pub script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/r2
+Installing sub script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/r2
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/install.log'

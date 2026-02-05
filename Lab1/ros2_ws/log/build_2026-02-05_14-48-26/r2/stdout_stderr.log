@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/r2/r2.egg-info
+writing ../../build/r2/r2.egg-info/PKG-INFO
+writing dependency_links to ../../build/r2/r2.egg-info/dependency_links.txt
+writing entry points to ../../build/r2/r2.egg-info/entry_points.txt
+writing requirements to ../../build/r2/r2.egg-info/requires.txt
+writing top-level names to ../../build/r2/r2.egg-info/top_level.txt
+writing manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+reading manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+writing manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+copying r2/printer.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+copying r2/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+running install
+running install_lib
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2/printer.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2/printer.py to printer.cpython-38.pyc
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index/resource_index
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index/resource_index/packages
+copying resource/r2 -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index/resource_index/packages
+copying package.xml -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/r2
+running install_egg_info
+Copying ../../build/r2/r2.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2-0.0.0-py3.8.egg-info
+running install_scripts
+Installing prt script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/r2
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/install.log'

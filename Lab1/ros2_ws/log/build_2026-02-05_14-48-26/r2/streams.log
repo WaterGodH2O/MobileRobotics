@@ -1,0 +1,37 @@
+[0.889s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/r2 build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/install.log --install-scripts $base/lib/r2 --single-version-externally-managed
+[1.080s] running egg_info
+[1.080s] creating ../../build/r2/r2.egg-info
+[1.080s] writing ../../build/r2/r2.egg-info/PKG-INFO
+[1.080s] writing dependency_links to ../../build/r2/r2.egg-info/dependency_links.txt
+[1.080s] writing entry points to ../../build/r2/r2.egg-info/entry_points.txt
+[1.080s] writing requirements to ../../build/r2/r2.egg-info/requires.txt
+[1.081s] writing top-level names to ../../build/r2/r2.egg-info/top_level.txt
+[1.082s] writing manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+[1.110s] reading manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+[1.110s] writing manifest file '../../build/r2/r2.egg-info/SOURCES.txt'
+[1.110s] running build
+[1.111s] running build_py
+[1.111s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build
+[1.111s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib
+[1.111s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+[1.112s] copying r2/printer.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+[1.112s] copying r2/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2
+[1.112s] running install
+[1.112s] running install_lib
+[1.112s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+[1.113s] copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2/printer.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+[1.113s] copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build/lib/r2/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2
+[1.113s] byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2/printer.py to printer.cpython-38.pyc
+[1.114s] byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2/__init__.py to __init__.cpython-38.pyc
+[1.114s] running install_data
+[1.115s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index
+[1.115s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index/resource_index
+[1.115s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index/resource_index/packages
+[1.115s] copying resource/r2 -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/ament_index/resource_index/packages
+[1.115s] copying package.xml -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/share/r2
+[1.115s] running install_egg_info
+[1.116s] Copying ../../build/r2/r2.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages/r2-0.0.0-py3.8.egg-info
+[1.117s] running install_scripts
+[1.133s] Installing prt script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/r2
+[1.133s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/install.log'
+[1.151s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/r2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/r2 build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/r2/install.log --install-scripts $base/lib/r2 --single-version-externally-managed
