@@ -56,11 +56,16 @@ ros2 launch pubsub_launcher.launch.py
     
 
     
-    
-    
-    
-    
-    
+========================================================================================
+2-2
+
+ros2 service call /turtle1/teleport_absolute turtlesim/srv/TeleportAbsolute '{x: 2.0, y: 2.0, theta: 0.0}'
+
+To red
+ros2 param set /A background_r 200
+ros2 param set /A background_b 0
+ros2 param set /A background_g 0
+
     
     
     
