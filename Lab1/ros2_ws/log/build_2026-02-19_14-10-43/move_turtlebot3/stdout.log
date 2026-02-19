@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/move_turtlebot3/move_turtlebot3.egg-info
+writing ../../build/move_turtlebot3/move_turtlebot3.egg-info/PKG-INFO
+writing dependency_links to ../../build/move_turtlebot3/move_turtlebot3.egg-info/dependency_links.txt
+writing entry points to ../../build/move_turtlebot3/move_turtlebot3.egg-info/entry_points.txt
+writing requirements to ../../build/move_turtlebot3/move_turtlebot3.egg-info/requires.txt
+writing top-level names to ../../build/move_turtlebot3/move_turtlebot3.egg-info/top_level.txt
+writing manifest file '../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'
+reading manifest file '../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'
+writing manifest file '../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/build
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/build/lib
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/build/lib/move_turtlebot3
+copying move_turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/build/lib/move_turtlebot3
+copying move_turtlebot3/trajectory.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/build/lib/move_turtlebot3
+running install
+running install_lib
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/build/lib/move_turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/build/lib/move_turtlebot3/trajectory.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3/trajectory.py to trajectory.cpython-38.pyc
+running install_data
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/share/ament_index
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/share/ament_index/resource_index
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/share/ament_index/resource_index/packages
+copying resource/move_turtlebot3 -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/share/ament_index/resource_index/packages
+copying package.xml -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/share/move_turtlebot3
+running install_egg_info
+Copying ../../build/move_turtlebot3/move_turtlebot3.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3-0.0.0-py3.8.egg-info
+running install_scripts
+Installing traj script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/move_turtlebot3/lib/move_turtlebot3
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/move_turtlebot3/install.log'

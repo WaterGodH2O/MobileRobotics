@@ -1,0 +1,3 @@
+[console_scripts]
+traj = move_turtlebot3.trajectory:main
+

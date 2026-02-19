@@ -1,0 +1,33 @@
+[2.623s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed
+[2.958s] running egg_info
+[2.960s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[2.960s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[2.961s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[2.961s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[2.961s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[2.962s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[2.962s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.997s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.998s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.999s] running build
+[2.999s] running build_py
+[2.999s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/build
+[3.000s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/build/lib
+[3.001s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[3.001s] copying my_py_pkg/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[3.002s] running install
+[3.002s] running install_lib
+[3.003s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[3.003s] copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg
+[3.004s] byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg/__init__.py to __init__.cpython-38.pyc
+[3.007s] running install_data
+[3.007s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/share/ament_index
+[3.008s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[3.008s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[3.008s] copying resource/my_py_pkg -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[3.009s] copying package.xml -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[3.009s] running install_egg_info
+[3.010s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info
+[3.011s] running install_scripts
+[3.030s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/install.log'
+[3.197s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed

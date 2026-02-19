@@ -1,0 +1,21 @@
+[2.461s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/package_name/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/package_name/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/package_name build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/package_name/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/package_name/install.log --install-scripts $base/lib/package_name --single-version-externally-managed
+[2.724s] running egg_info
+[2.725s] writing ../../build/package_name/package_name.egg-info/PKG-INFO
+[2.726s] writing dependency_links to ../../build/package_name/package_name.egg-info/dependency_links.txt
+[2.726s] writing entry points to ../../build/package_name/package_name.egg-info/entry_points.txt
+[2.726s] writing requirements to ../../build/package_name/package_name.egg-info/requires.txt
+[2.726s] writing top-level names to ../../build/package_name/package_name.egg-info/top_level.txt
+[2.760s] reading manifest file '../../build/package_name/package_name.egg-info/SOURCES.txt'
+[2.762s] writing manifest file '../../build/package_name/package_name.egg-info/SOURCES.txt'
+[2.762s] running build
+[2.763s] running build_py
+[2.764s] running install
+[2.766s] running install_lib
+[2.768s] running install_data
+[2.774s] running install_egg_info
+[2.776s] removing '/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/package_name/lib/python3.8/site-packages/package_name-0.0.0-py3.8.egg-info' (and everything under it)
+[2.803s] Copying ../../build/package_name/package_name.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/package_name/lib/python3.8/site-packages/package_name-0.0.0-py3.8.egg-info
+[2.804s] running install_scripts
+[2.820s] Installing my_node script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/package_name/lib/package_name
+[2.820s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/package_name/install.log'
+[2.845s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/package_name/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/package_name/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/package_name build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/package_name/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/package_name/install.log --install-scripts $base/lib/package_name --single-version-externally-managed
