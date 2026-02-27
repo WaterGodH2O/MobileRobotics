@@ -1,3 +1,0 @@
-[console_scripts]
-my_node = package_name.my_node:main
-

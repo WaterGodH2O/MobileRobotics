@@ -1,0 +1,31 @@
+[0.000000] (-) TimerEvent: {}
+[0.000380] (move_square) JobQueued: {'identifier': 'move_square', 'dependencies': OrderedDict()}
+[0.000519] (move_turtlebot3) JobQueued: {'identifier': 'move_turtlebot3', 'dependencies': OrderedDict()}
+[0.000534] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.000545] (package_name) JobQueued: {'identifier': 'package_name', 'dependencies': OrderedDict()}
+[0.000556] (r2) JobQueued: {'identifier': 'r2', 'dependencies': OrderedDict()}
+[0.000568] (move_square) JobStarted: {'identifier': 'move_square'}
+[0.099850] (-) TimerEvent: {}
+[0.100762] (move_turtlebot3) JobStarted: {'identifier': 'move_turtlebot3'}
+[0.199984] (-) TimerEvent: {}
+[0.207360] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.300081] (-) TimerEvent: {}
+[0.310784] (package_name) JobStarted: {'identifier': 'package_name'}
+[0.400204] (-) TimerEvent: {}
+[0.500480] (-) TimerEvent: {}
+[0.601177] (-) TimerEvent: {}
+[0.701625] (-) TimerEvent: {}
+[0.801974] (-) TimerEvent: {}
+[0.902279] (-) TimerEvent: {}
+[1.002543] (-) TimerEvent: {}
+[1.103012] (-) TimerEvent: {}
+[1.170791] (move_square) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build\n    return await extension.build(additional_hooks=additional_hooks)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 85, in build\n    available_commands = await self._get_available_commands(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 175, in _get_available_commands\n    output = await check_output(\n  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\nAssertionError: Expected [\'/usr/bin/python3\', \'setup.py\', \'--help-commands\'] to pass: /usr/bin/python3: can\'t open file \'setup.py\': [Errno 2] No such file or directory\n\n'}
+[1.171168] (move_square) JobEnded: {'identifier': 'move_square', 'rc': 1}
+[1.203092] (-) TimerEvent: {}
+[1.303513] (-) TimerEvent: {}
+[1.404049] (-) TimerEvent: {}
+[1.420601] (package_name) JobEnded: {'identifier': 'package_name', 'rc': 'SIGINT'}
+[1.422636] (move_turtlebot3) JobEnded: {'identifier': 'move_turtlebot3', 'rc': 'SIGINT'}
+[1.439691] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 'SIGINT'}
+[1.450259] (r2) JobSkipped: {'identifier': 'r2'}
+[1.450308] (-) EventReactorShutdown: {}
