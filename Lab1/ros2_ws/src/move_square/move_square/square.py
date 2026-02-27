@@ -3,20 +3,19 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-
+from nav_msgs.msg import Odometry
 
 import math
 
 class Mover(Node):
-
     def __init__(self):
         super().__init__('square_mover')
 
-        self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.publisher_ = self.create_publisher(Twist, 'cmd_vel_orig', 10)
         self.timer = self.create_timer(0.1, self.timer_callback)
 
         # 参数
-        self.linear_speed = 0.3
+        self.linear_speed = 0.8
         self.angular_speed = 0.5
 
         self.forward_time = 4.0 / self.linear_speed
@@ -26,9 +25,25 @@ class Mover(Node):
         self.time_count = 0.0
         self.edge_count = 0
 
-        self.get_logger().info("Start square movement")
+        self.get_logger().info("Start square movement 1.1")
+
+
+        # 保存最新位姿
+        self.last_x = 0.0
+        self.last_y = 0.0
+        self.last_yaw = 0.0
+
+        # 订阅 odom
+        self.odom_sub = self.create_subscription(
+            Odometry, '/odom', self.odom_callback, 10
+        )
+
+        # Gazebo reset service client（Gazebo Classic 常用）
+        from std_srvs.srv import Empty
+        self.reset_cli = self.create_client(Empty, '/reset_world')
 
     def timer_callback(self):
+
 
         msg = Twist()
         self.time_count += 0.1
@@ -39,11 +54,7 @@ class Mover(Node):
 
             if self.time_count >= self.forward_time:
                 self.phase = "turn"
-
-                stop = Twist()
-                for _ in range(10):              # break
-                    self.publisher_.publish(stop)
-
+                self.get_logger().info("turn")
                 self.time_count = 0.0
 
         elif self.phase == "turn":
@@ -52,9 +63,6 @@ class Mover(Node):
 
             if self.time_count >= self.turn_time:
                 self.edge_count += 1
-                stop = Twist()
-                for _ in range(10):              # break
-                    self.publisher_.publish(stop)
                 self.time_count = 0.0
 
                 if self.edge_count >= 4:
@@ -65,25 +73,52 @@ class Mover(Node):
 
         self.publisher_.publish(msg)
 
+    def odom_callback(self, msg: Odometry):
+        self.last_x = msg.pose.pose.position.x
+        self.last_y = msg.pose.pose.position.y
+
+        q = msg.pose.pose.orientation
+        # yaw from quaternion
+        siny_cosp = 2.0 * (q.w * q.z + q.x * q.y)
+        cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
+        self.last_yaw = math.atan2(siny_cosp, cosy_cosp)
+
     def stop_robot(self):
         self.timer.cancel()
-
-        stop = Twist()
-        for _ in range(10):              # 连发几次更稳
-            self.publisher_.publish(stop)
-
-        self.get_logger().info("Square completed, stopping and exiting")
+        self.publisher_.publish(Twist())
+        self.get_logger().info("Square completed")
         rclpy.shutdown()
+
+
+    def reset_gazebo(self):
+        from std_srvs.srv import Empty
+
+        if not self.reset_cli.wait_for_service(timeout_sec=2.0):
+            self.get_logger().error("Service /reset_world not available")
+            return False
+
+        req = Empty.Request()
+        future = self.reset_cli.call_async(req)
+        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
+
+        if future.result() is None:
+            self.get_logger().error("Reset service call failed or timed out")
+            return False
+
+        self.get_logger().info("Gazebo world reset done")
+        return True
 
 def main(args=None):
     rclpy.init(args=args)
 
     mover = Mover()
-    rclpy.spin(mover)
+    rclpy.spin(mover)   # 会因为 shutdown 退出
+
+    print(f"x={mover.last_x:.3f}, y={mover.last_y:.3f}, yaw={mover.last_yaw:.3f}")
+
+    mover.reset_gazebo()
 
     mover.destroy_node()
-    rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()

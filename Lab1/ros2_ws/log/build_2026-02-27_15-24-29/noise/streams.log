@@ -1,0 +1,37 @@
+[1.382s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/noise': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/noise build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/install.log --install-scripts $base/lib/noise --single-version-externally-managed
+[1.560s] running egg_info
+[1.561s] creating ../build/noise/noise.egg-info
+[1.562s] writing ../build/noise/noise.egg-info/PKG-INFO
+[1.563s] writing dependency_links to ../build/noise/noise.egg-info/dependency_links.txt
+[1.563s] writing entry points to ../build/noise/noise.egg-info/entry_points.txt
+[1.564s] writing requirements to ../build/noise/noise.egg-info/requires.txt
+[1.564s] writing top-level names to ../build/noise/noise.egg-info/top_level.txt
+[1.566s] writing manifest file '../build/noise/noise.egg-info/SOURCES.txt'
+[1.587s] reading manifest file '../build/noise/noise.egg-info/SOURCES.txt'
+[1.589s] writing manifest file '../build/noise/noise.egg-info/SOURCES.txt'
+[1.589s] running build
+[1.590s] running build_py
+[1.590s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build
+[1.590s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build/lib
+[1.591s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build/lib/noise
+[1.591s] copying noise/noise.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build/lib/noise
+[1.591s] copying noise/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build/lib/noise
+[1.591s] running install
+[1.593s] running install_lib
+[1.596s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise
+[1.596s] copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build/lib/noise/noise.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise
+[1.597s] copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build/lib/noise/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise
+[1.598s] byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise/noise.py to noise.cpython-38.pyc
+[1.607s] byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise/__init__.py to __init__.cpython-38.pyc
+[1.607s] running install_data
+[1.607s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/share/ament_index
+[1.607s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/share/ament_index/resource_index
+[1.607s] creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/share/ament_index/resource_index/packages
+[1.607s] copying resource/noise -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/share/ament_index/resource_index/packages
+[1.607s] copying package.xml -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/share/noise
+[1.607s] running install_egg_info
+[1.607s] Copying ../build/noise/noise.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise-0.0.0-py3.8.egg-info
+[1.607s] running install_scripts
+[1.635s] Installing noise script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/noise
+[1.635s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/install.log'
+[1.802s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/noise' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/noise build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/install.log --install-scripts $base/lib/noise --single-version-externally-managed

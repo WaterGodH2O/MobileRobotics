@@ -1,0 +1,19 @@
+running egg_info
+writing ../build/noise/noise.egg-info/PKG-INFO
+writing dependency_links to ../build/noise/noise.egg-info/dependency_links.txt
+writing entry points to ../build/noise/noise.egg-info/entry_points.txt
+writing requirements to ../build/noise/noise.egg-info/requires.txt
+writing top-level names to ../build/noise/noise.egg-info/top_level.txt
+reading manifest file '../build/noise/noise.egg-info/SOURCES.txt'
+writing manifest file '../build/noise/noise.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../build/noise/noise.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/python3.8/site-packages/noise-0.0.0-py3.8.egg-info
+running install_scripts
+Installing noise script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/noise/lib/noise
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/noise/install.log'

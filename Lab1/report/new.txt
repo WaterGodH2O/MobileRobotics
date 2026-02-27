@@ -149,7 +149,22 @@ time_count to record the time and when time is up, change the state between turn
 for _ in range(10):              # break
    self.publisher_.publish(stop)
 this part is used to break the bot.
-    
+
+
+
+
+----------------
+
+3-2
+no noise
+pose:
+  pose:
+    position:
+      x: 1.0090047998074259
+      y: 0.5225275085511123
+      z: 0.008528991364428922
+
+----------------------
     
     
     
