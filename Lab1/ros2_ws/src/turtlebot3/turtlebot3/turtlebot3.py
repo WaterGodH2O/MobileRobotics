@@ -16,11 +16,19 @@
 from math import pi, sqrt, atan2, cos, sin
 import numpy as np
 import threading
+import time
 import rclpy
 from tf_transformations import euler_from_quaternion
 from std_msgs.msg import Empty
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist, Pose2D
+
+from controller.controller import Controller
+
+
+def normalize_angle(angle):
+    """Wrap angle to [-pi, pi]."""
+    return atan2(sin(angle), cos(angle))
 
 
 class Turtlebot3():
@@ -45,6 +53,15 @@ class Turtlebot3():
             Odometry, "odom", self.odom_callback, 10
         )
 
+        # PD controller for orientation theta only (setpoint updated per waypoint)
+        self.theta_controller = Controller(P=1.0, D=0.1, set_point=0.0)
+
+        # Waypoints (e.g. square: forward, left, back, home)
+        self.waypoints = [(4.0, 0.0), (4.0, 4.0), (0.0, 4.0), (0.0, 0.0)]
+        self.angle_threshold = 0.05   # rad, consider aligned
+        self.dist_threshold = 0.08    # m, consider reached
+        self.linear_speed = 0.15      # m/s when moving forward
+
         try:
             self.run()
         except KeyboardInterrupt:
@@ -56,8 +73,60 @@ class Turtlebot3():
             rclpy.shutdown()
 
     def run(self):
-        # add your code here to adjust your movement based on 2D pose feedback
-        pass
+
+        time.sleep(1.0)
+        for _ in range(20):
+            if self.logging_counter > 0:
+                break
+            self.rate.sleep()
+
+        for x_star, y_star in self.waypoints:
+            # Step 1 & 2: Desired orientation = direction from (x,y) to (x*,y*)
+            dx = x_star - self.pose.x
+            dy = y_star - self.pose.y
+            theta_star = atan2(dy, dx)
+            self.theta_controller.setPoint(theta_star)
+
+            # Step 3: Turn until aligned with theta*
+            while rclpy.ok():
+                err = normalize_angle(theta_star - self.pose.theta)
+                if abs(err) < self.angle_threshold:
+                    break
+                # Pass value so that controller sees normalized error
+                current_for_pd = theta_star - err
+                omega = self.theta_controller.update(current_for_pd)
+                msg = Twist()
+                msg.linear.x = 0.0
+                msg.angular.z = max(-0.5, min(0.5, omega))
+                self.vel_pub.publish(msg)
+                self.rate.sleep()
+
+            # Step 4: Move forward, keep adjusting angle and check distance
+            while rclpy.ok():
+                dx = x_star - self.pose.x
+                dy = y_star - self.pose.y
+                dist = sqrt(dx * dx + dy * dy)
+                if dist < self.dist_threshold:
+                    break
+                theta_star = atan2(dy, dx)
+                self.theta_controller.setPoint(theta_star)
+                err = normalize_angle(theta_star - self.pose.theta)
+                current_for_pd = theta_star - err
+                omega = self.theta_controller.update(current_for_pd)
+                msg = Twist()
+                msg.linear.x = self.linear_speed
+                msg.angular.z = max(-0.5, min(0.5, omega))
+                self.vel_pub.publish(msg)
+                self.rate.sleep()
+
+            # Step 5: Stop before next waypoint
+            msg = Twist()
+            msg.linear.x = 0.0
+            msg.angular.z = 0.0
+            self.vel_pub.publish(msg)
+            self.rate.sleep()
+
+        self.node.get_logger().info("All waypoints reached.")
 
     def odom_callback(self, msg):
         # get pose = (x, y, theta) from odometry topic
