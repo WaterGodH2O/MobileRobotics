@@ -153,7 +153,7 @@ this part is used to break the bot.
 
 
 
-----------------
+====================================================================
 
 3-3
 代码在calculate.py 以下噪声从小到大
@@ -170,12 +170,39 @@ this part is used to break the bot.
 
 
 subscribe topic /odom to get the coordinate of bot, then amend the direction and velocity in realtime based on this information.
-----------------------
+=======================================================================
     
-    
-    
-    
-    
+4-1
+
+-------
+class Controller:
+    def __init__(self, P=0.0, D=0.0, set_point=0):
+        self.Kp = P
+        self.Kd = D
+        self.set_point = set_point  # reference (desired value)
+        self.previous_error = 0
+
+    def update(self, current_value):
+        # calculate P_term and D_term
+        # e(t) = setpoint - current_value
+        error = self.set_point - current_value
+        P_term = self.Kp * error
+        D_term = self.Kd * (error - self.previous_error)
+        self.previous_error = error
+        return P_term + D_term
+
+    def setPoint(self, set_point):
+        self.set_point = set_point
+        self.previous_error = 0
+
+    def setPD(self, P=0.0, D=0.0):
+        self.Kp = P
+        self.Kd = D
+--------------------------
+first define the error: error = self.set_point - current_value
+then P term is simply just Kp times error.
+D term need to store the preious error (which is init as 0) then do a subtraction
+
     
     
     

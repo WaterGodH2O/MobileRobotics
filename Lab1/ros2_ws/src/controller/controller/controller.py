@@ -7,9 +7,10 @@ class Controller:
 
     def update(self, current_value):
         # calculate P_term and D_term
-        error = 
-        P_term = 
-        D_term = 
+        # e(t) = setpoint - current_value
+        error = self.set_point - current_value
+        P_term = self.Kp * error
+        D_term = self.Kd * (error - self.previous_error)
         self.previous_error = error
         return P_term + D_term
 
