@@ -168,6 +168,8 @@ this part is used to break the bot.
 
 
 
+
+subscribe topic /odom to get the coordinate of bot, then amend the direction and velocity in realtime based on this information.
 ----------------------
     
     
