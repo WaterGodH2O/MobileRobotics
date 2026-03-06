@@ -73,15 +73,37 @@ class Mover(Node):
 
         self.publisher_.publish(msg)
 
-    def odom_callback(self, msg: Odometry):
-        self.last_x = msg.pose.pose.position.x
-        self.last_y = msg.pose.pose.position.y
+    def odom_callback(self, msg):
+        # get pose = (x, y, theta) from odometry topic
+        quaternion = [
+            msg.pose.pose.orientation.x,
+            msg.pose.pose.orientation.y,
+            msg.pose.pose.orientation.z,
+            msg.pose.pose.orientation.w,
+        ]
 
-        q = msg.pose.pose.orientation
-        # yaw from quaternion
-        siny_cosp = 2.0 * (q.w * q.z + q.x * q.y)
-        cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
-        self.last_yaw = math.atan2(siny_cosp, cosy_cosp)
+        (roll, pitch, yaw) = euler_from_quaternion(quaternion)
+
+        self.pose.theta = yaw
+        self.pose.x = msg.pose.pose.position.x
+        self.pose.y = msg.pose.pose.position.y
+
+        # logging once every 100 times (Gazebo runs at 1000Hz; we save it at 10Hz)
+        self.logging_counter += 1
+
+        if self.logging_counter == 100:
+            self.logging_counter = 0
+            self.trajectory.append([self.pose.x, self.pose.y])  # save trajectory
+
+            self.node.get_logger().info(
+                "odom: x="
+                + str(self.pose.x)
+                + "; y="
+                + str(self.pose.y)
+                + "; theta="
+                + str(yaw)
+            )
+
 
     def stop_robot(self):
         self.timer.cancel()
