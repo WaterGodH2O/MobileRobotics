@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/turtlebot3/turtlebot3.egg-info
+writing ../../build/turtlebot3/turtlebot3.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot3/turtlebot3.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot3/turtlebot3.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot3/turtlebot3.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot3/turtlebot3.egg-info/top_level.txt
+writing manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3
+copying turtlebot3/turtlebot3.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3
+copying turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3
+running install
+running install_lib
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3/turtlebot3.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3/turtlebot3.py to turtlebot3.cpython-38.pyc
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/share/ament_index
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/share/ament_index/resource_index
+creating /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/share/ament_index/resource_index/packages
+copying resource/turtlebot3 -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/share/ament_index/resource_index/packages
+copying package.xml -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/share/turtlebot3
+running install_egg_info
+Copying ../../build/turtlebot3/turtlebot3.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3-0.0.0-py3.8.egg-info
+running install_scripts
+Installing bot3 script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/turtlebot3
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/install.log'
