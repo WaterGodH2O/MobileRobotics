@@ -6,7 +6,18 @@ from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 
 import math
+import numpy as np
+import threading
+import time
+import rclpy
+from tf_transformations import euler_from_quaternion
+from std_msgs.msg import Empty
+from nav_msgs.msg import Odometry
+from geometry_msgs.msg import Twist, Pose2D
 
+from controller.controller import Controller
+
+trajectory = list()
 class Mover(Node):
     def __init__(self):
         super().__init__('square_mover')
@@ -24,6 +35,8 @@ class Mover(Node):
         self.phase = "forward"
         self.time_count = 0.0
         self.edge_count = 0
+
+        
 
         self.get_logger().info("Start square movement 1.1")
 
@@ -75,6 +88,8 @@ class Mover(Node):
 
     def odom_callback(self, msg):
         # get pose = (x, y, theta) from odometry topic
+
+        global trajectory
         quaternion = [
             msg.pose.pose.orientation.x,
             msg.pose.pose.orientation.y,
@@ -93,7 +108,7 @@ class Mover(Node):
 
         if self.logging_counter == 100:
             self.logging_counter = 0
-            self.trajectory.append([self.pose.x, self.pose.y])  # save trajectory
+            trajectory.append([self.pose.x, self.pose.y])  # save trajectory
 
             self.node.get_logger().info(
                 "odom: x="
@@ -131,6 +146,7 @@ class Mover(Node):
         return True
 
 def main(args=None):
+    global trajectory
     rclpy.init(args=args)
 
     mover = Mover()
@@ -140,6 +156,7 @@ def main(args=None):
 
     mover.reset_gazebo()
 
+    np.savetxt("trajectory.csv", np.array(trajectory), delimiter=",")
     mover.destroy_node()
 
 if __name__ == '__main__':
