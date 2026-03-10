@@ -9,8 +9,8 @@ class AddMotionNoise(Node):
         super().__init__('add_motion_noise')
 
         # Parameters
-        self.declare_parameter('linear_noise', 0.3)     # std dev for linear.x
-        self.declare_parameter('angular_noise', 0.3)    # std dev for angular.z
+        self.declare_parameter('linear_noise', 0.03)     # std dev for linear.x
+        self.declare_parameter('angular_noise', 0.03)    # std dev for angular.z
         self.declare_parameter('sub_topic_name', 'cmd_vel_orig')
         self.declare_parameter('pub_topic_name', 'cmd_vel')
 

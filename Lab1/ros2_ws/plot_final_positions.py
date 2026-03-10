@@ -49,12 +49,12 @@ def main():
     scatter = ax.scatter(x_vals, y_vals, c=trials, cmap="viridis", s=80, edgecolors="black")
 
     # Optional: mark target (0, 0) if near the data range
-    ax.axhline(0, color="gray", linestyle="--", linewidth=0.8)
-    ax.axvline(0, color="gray", linestyle="--", linewidth=0.8)
-    ax.plot(0, 0, "r*", markersize=12, label="Target (0, 0)")
 
-    for i, (xi, yi) in enumerate(zip(x_vals, y_vals)):
-        ax.annotate(str(trials[i]), (xi, yi), xytext=(5, 5), textcoords="offset points", fontsize=9)
+
+    ax.set_xlim(-1, 5)
+    ax.set_ylim(-1, 5)
+
+
 
     plt.colorbar(scatter, ax=ax, label="Trial")
     ax.set_xlabel("x (m)")

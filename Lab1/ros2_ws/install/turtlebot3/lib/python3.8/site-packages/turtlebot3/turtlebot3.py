@@ -60,7 +60,7 @@ class Turtlebot3():
         self.waypoints = [(4.0, 0.0), (4.0, 4.0), (0.0, 4.0), (0.0, 0.0)]
         self.angle_threshold = 0.05   # rad, consider aligned
         self.dist_threshold = 0.08    # m, consider reached
-        self.linear_speed = 0.15      # m/s when moving forward
+        self.linear_speed = 0.6      # m/s when moving forward
 
         try:
             self.run()
@@ -81,13 +81,13 @@ class Turtlebot3():
             self.rate.sleep()
 
         for x_star, y_star in self.waypoints:
-            # Step 1 & 2: Desired orientation = direction from (x,y) to (x*,y*)
+            # Desired orientation = direction from (x,y) to (x*,y*)
             dx = x_star - self.pose.x
             dy = y_star - self.pose.y
             theta_star = atan2(dy, dx)
             self.theta_controller.setPoint(theta_star)
 
-            # Step 3: Turn until aligned with theta*
+            # Turn until aligned with theta*
             while rclpy.ok():
                 err = normalize_angle(theta_star - self.pose.theta)
                 if abs(err) < self.angle_threshold:
@@ -101,7 +101,7 @@ class Turtlebot3():
                 self.vel_pub.publish(msg)
                 self.rate.sleep()
 
-            # Step 4: Move forward, keep adjusting angle and check distance
+            # Move forward, keep adjusting angle and check distance
             while rclpy.ok():
                 dx = x_star - self.pose.x
                 dy = y_star - self.pose.y
@@ -119,7 +119,7 @@ class Turtlebot3():
                 self.vel_pub.publish(msg)
                 self.rate.sleep()
 
-            # Step 5: Stop before next waypoint
+            # Stop before next waypoint
             msg = Twist()
             msg.linear.x = 0.0
             msg.angular.z = 0.0

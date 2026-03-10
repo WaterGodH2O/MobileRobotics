@@ -1,0 +1,21 @@
+[1.384s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/install.log --install-scripts $base/lib/turtlebot3 --single-version-externally-managed
+[1.530s] running egg_info
+[1.531s] writing ../../build/turtlebot3/turtlebot3.egg-info/PKG-INFO
+[1.532s] writing dependency_links to ../../build/turtlebot3/turtlebot3.egg-info/dependency_links.txt
+[1.532s] writing entry points to ../../build/turtlebot3/turtlebot3.egg-info/entry_points.txt
+[1.533s] writing requirements to ../../build/turtlebot3/turtlebot3.egg-info/requires.txt
+[1.533s] writing top-level names to ../../build/turtlebot3/turtlebot3.egg-info/top_level.txt
+[1.569s] reading manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+[1.570s] writing manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+[1.570s] running build
+[1.570s] running build_py
+[1.571s] running install
+[1.572s] running install_lib
+[1.573s] running install_data
+[1.573s] running install_egg_info
+[1.576s] removing '/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3-0.0.0-py3.8.egg-info' (and everything under it)
+[1.581s] Copying ../../build/turtlebot3/turtlebot3.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3-0.0.0-py3.8.egg-info
+[1.584s] running install_scripts
+[1.595s] Installing bot3 script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/turtlebot3
+[1.596s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/install.log'
+[1.724s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/install.log --install-scripts $base/lib/turtlebot3 --single-version-externally-managed

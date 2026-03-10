@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/turtlebot3/turtlebot3.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot3/turtlebot3.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot3/turtlebot3.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot3/turtlebot3.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot3/turtlebot3.egg-info/top_level.txt
+reading manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+running build
+running build_py
+copying turtlebot3/turtlebot3.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3
+copying turtlebot3/run_10_trials.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3
+running install
+running install_lib
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3/turtlebot3.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3
+copying /home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/build/lib/turtlebot3/run_10_trials.py -> /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3/turtlebot3.py to turtlebot3.cpython-38.pyc
+byte-compiling /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3/run_10_trials.py to run_10_trials.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/turtlebot3/turtlebot3.egg-info to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/python3.8/site-packages/turtlebot3-0.0.0-py3.8.egg-info
+running install_scripts
+Installing bot3 script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/turtlebot3
+Installing run_10_trials script to /home/dcs/Desktop/Lab/Lab1/ros2_ws/install/turtlebot3/lib/turtlebot3
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/ros2_ws/build/turtlebot3/install.log'
