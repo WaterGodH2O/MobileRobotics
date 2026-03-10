@@ -60,7 +60,7 @@ class Turtlebot3():
         self.waypoints = [(4.0, 0.0), (4.0, 4.0), (0.0, 4.0), (0.0, 0.0)]
         self.angle_threshold = 0.05   # rad, consider aligned
         self.dist_threshold = 0.08    # m, consider reached
-        self.linear_speed = 0.15      # m/s when moving forward
+        self.linear_speed = 0.6      # m/s when moving forward
 
         try:
             self.run()

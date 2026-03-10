@@ -15,7 +15,7 @@
 
 """
 Run the turtlebot3 square motion 10 times, resetting Gazebo before each run.
-Saves each trajectory as trajectory_1.csv, trajectory_2.csv, ... trajectory_10.csv.
+Saves only each trial's final stopping position (x, y) to a single file: final_positions.csv.
 """
 
 import os
@@ -24,11 +24,40 @@ import time
 
 import rclpy
 from rclpy.node import Node
+from nav_msgs.msg import Odometry
 from std_srvs.srv import Empty
+from tf_transformations import euler_from_quaternion
 
 
 NUM_TRIALS = 10
 SETTLE_AFTER_RESET = 2.0  # seconds to wait after reset before starting bot
+FINAL_POSITIONS_FILENAME = "final_positions.csv"
+
+
+def get_current_pose(node, timeout_sec=3.0):
+    """Subscribe to /odom, wait for one message, return (x, y) or None."""
+    pose = [None]
+
+    def cb(msg):
+        if pose[0] is not None:
+            return
+        x = msg.pose.pose.position.x
+        y = msg.pose.pose.position.y
+        quat = [
+            msg.pose.pose.orientation.x,
+            msg.pose.pose.orientation.y,
+            msg.pose.pose.orientation.z,
+            msg.pose.pose.orientation.w,
+        ]
+        (_, _, yaw) = euler_from_quaternion(quat)
+        pose[0] = (x, y, yaw)
+
+    sub = node.create_subscription(Odometry, "odom", cb, 10)
+    deadline = time.monotonic() + timeout_sec
+    while rclpy.ok() and pose[0] is None and time.monotonic() < deadline:
+        rclpy.spin_once(node, timeout_sec=0.1)
+    node.destroy_subscription(sub)
+    return pose[0]
 
 
 def main(args=None):
@@ -45,6 +74,7 @@ def main(args=None):
         return
 
     cwd = os.getcwd()
+    final_positions = []  # list of (trial_id, x, y) after each run
 
     for i in range(1, NUM_TRIALS + 1):
         logger.info(f"=== Trial {i}/{NUM_TRIALS} ===")
@@ -70,16 +100,21 @@ def main(args=None):
         if ret.returncode != 0:
             logger.warn("bot3 exited with code %d" % ret.returncode)
 
-        # Rename trajectory.csv to trajectory_N.csv
-        src = os.path.join(cwd, "trajectory.csv")
-        dst = os.path.join(cwd, "trajectory_%d.csv" % i)
-        if os.path.isfile(src):
-            if os.path.isfile(dst):
-                os.remove(dst)
-            os.rename(src, dst)
-            logger.info("Saved %s" % os.path.basename(dst))
+        # Only record bot's final stopping position (one sample per trial)
+        p = get_current_pose(node)
+        if p is not None:
+            final_positions.append((i, p[0], p[1]))
+            logger.info("Trial %d final position: (%.4f, %.4f)" % (i, p[0], p[1]))
         else:
-            logger.warn("No trajectory.csv produced for trial %d" % i)
+            logger.warn("Could not get pose after trial %d" % i)
+
+    # Write all data to a single file (trial, x, y only)
+    out_path = os.path.join(cwd, FINAL_POSITIONS_FILENAME)
+    with open(out_path, "w") as f:
+        f.write("trial,x,y\n")
+        for trial_id, x, y in final_positions:
+            f.write("%d,%.6f,%.6f\n" % (trial_id, x, y))
+    logger.info("Wrote %d final positions to %s" % (len(final_positions), out_path))
 
     logger.info("All %d trials finished." % NUM_TRIALS)
     node.destroy_node()
