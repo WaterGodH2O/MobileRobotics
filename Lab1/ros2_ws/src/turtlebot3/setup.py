@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'bot3 = turtlebot3.turtlebot3:main'
+            'bot3 = turtlebot3.turtlebot3:main',
+            'run_10_trials = turtlebot3.run_10_trials:main',
         ],
     },
 )

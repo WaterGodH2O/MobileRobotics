@@ -7,6 +7,7 @@
   <maintainer email="sssp3095076964@gmail.com">dcs</maintainer>
   <license>TODO: License declaration</license>
 
+  <depend>std_srvs</depend>
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
