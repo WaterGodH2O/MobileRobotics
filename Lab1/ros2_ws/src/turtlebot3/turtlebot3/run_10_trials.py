@@ -76,7 +76,7 @@ def main(args=None):
     cwd = os.getcwd()
     final_positions = []  # list of (trial_id, x, y) after each run
 
-    for i in range(1, NUM_TRIALS + 1):
+    for i in range(0, NUM_TRIALS):
         logger.info(f"=== Trial {i}/{NUM_TRIALS} ===")
 
         # Reset Gazebo world
