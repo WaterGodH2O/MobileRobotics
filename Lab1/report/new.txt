@@ -448,3 +448,55 @@ if __name__ == '__main__':
 
 ---------------------------------------
 =============================================================================
+5-2 OpenLoop controller
+
+---------------------------------------
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import LaserScan
+from geometry_msgs.msg import Twist
+
+
+# open-loop control: speed is 0 when there is an obstacle in front, otherwise set to a constant speed
+FRONT_THRESHOLD = 0.3   # threshold of obstacle distance in front (m)
+LINEAR_SPEED = 0.5     # speed when there is no obstacle in front (m/s)
+FRONT_IDX = 0           # index of front laser scan 
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = Node('closed_loop_obstacle_node')
+
+    cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
+
+    def scan_callback(msg: LaserScan):
+        # use the front distance of the laser scan
+        front_range = msg.ranges[FRONT_IDX]
+        twist = Twist()
+        if front_range < FRONT_THRESHOLD:
+            twist.linear.x = 0.0
+            twist.angular.z = 0.0
+        else:
+            twist.linear.x = float(LINEAR_SPEED)
+            twist.angular.z = 0.0
+        cmd_vel_pub.publish(twist)
+        node.get_logger().info(f'published{twist.linear.x}')
+
+    node.create_subscription(LaserScan, '/scan', scan_callback, 10)
+    node.get_logger().info('Open-loop front obstacle avoidance: subscribing to /scan, publishing to cmd_vel')
+
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+
+---------------------------------------
+=============================================================================
+5-3 Closed Loop Controller
