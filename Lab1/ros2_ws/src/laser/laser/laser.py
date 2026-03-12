@@ -33,7 +33,7 @@ class LaserNode(Node):
         self._latest_scan = None
         self.subscription_ = self.create_subscription(
             LaserScan,
-            "/scan"
+            "/scan",
             self.scan_callback,
             10
         )
