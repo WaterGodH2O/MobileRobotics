@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../../build/move_square/move_square.egg-info/PKG-INFO
+../../../build/move_square/move_square.egg-info/SOURCES.txt
+../../../build/move_square/move_square.egg-info/dependency_links.txt
+../../../build/move_square/move_square.egg-info/entry_points.txt
+../../../build/move_square/move_square.egg-info/requires.txt
+../../../build/move_square/move_square.egg-info/top_level.txt
+../../../build/move_square/move_square.egg-info/zip-safe
+move_square/__init__.py
+move_square/square.py
+resource/move_square
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

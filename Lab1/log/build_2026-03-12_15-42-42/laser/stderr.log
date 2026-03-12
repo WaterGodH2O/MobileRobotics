@@ -1,0 +1,5 @@
+  File "/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser/laser.py", line 37
+    self.scan_callback,
+    ^
+SyntaxError: invalid syntax
+

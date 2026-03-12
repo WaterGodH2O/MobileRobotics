@@ -1,0 +1,37 @@
+[2.586s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_square/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_square build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_square/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_square/install.log --install-scripts $base/lib/move_square --single-version-externally-managed
+[2.975s] running egg_info
+[2.975s] creating ../../../build/move_square/move_square.egg-info
+[2.975s] writing ../../../build/move_square/move_square.egg-info/PKG-INFO
+[2.975s] writing dependency_links to ../../../build/move_square/move_square.egg-info/dependency_links.txt
+[2.975s] writing entry points to ../../../build/move_square/move_square.egg-info/entry_points.txt
+[2.975s] writing requirements to ../../../build/move_square/move_square.egg-info/requires.txt
+[2.975s] writing top-level names to ../../../build/move_square/move_square.egg-info/top_level.txt
+[2.975s] writing manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+[3.014s] reading manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+[3.015s] writing manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+[3.016s] running build
+[3.017s] running build_py
+[3.018s] creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build
+[3.018s] creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib
+[3.018s] creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square
+[3.019s] copying move_square/square.py -> /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square
+[3.023s] copying move_square/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square
+[3.024s] running install
+[3.036s] running install_lib
+[3.037s] creating /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square
+[3.037s] copying /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square/square.py -> /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square
+[3.037s] copying /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square
+[3.041s] byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square/square.py to square.cpython-38.pyc
+[3.041s] byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square/__init__.py to __init__.cpython-38.pyc
+[3.041s] running install_data
+[3.041s] creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index
+[3.041s] creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index
+[3.041s] creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index/packages
+[3.041s] copying resource/move_square -> /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index/packages
+[3.041s] copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square
+[3.042s] running install_egg_info
+[3.044s] Copying ../../../build/move_square/move_square.egg-info to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square-0.0.0-py3.8.egg-info
+[3.044s] running install_scripts
+[3.071s] Installing square script to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/move_square
+[3.080s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/move_square/install.log'
+[3.337s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_square/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_square build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_square/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_square/install.log --install-scripts $base/lib/move_square --single-version-externally-managed

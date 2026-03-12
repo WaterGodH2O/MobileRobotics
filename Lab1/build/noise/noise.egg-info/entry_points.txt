@@ -1,0 +1,3 @@
+[console_scripts]
+noise = noise.noise:main
+

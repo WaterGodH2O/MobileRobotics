@@ -1,0 +1,5 @@
+[console_scripts]
+prt = r2.printer:main
+pub = r2.publisher:main
+sub = r2.subscriber:main
+

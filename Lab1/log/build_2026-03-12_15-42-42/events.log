@@ -1,0 +1,463 @@
+[0.000000] (-) TimerEvent: {}
+[0.000345] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.000635] (laser) JobQueued: {'identifier': 'laser', 'dependencies': OrderedDict()}
+[0.000841] (move_square) JobQueued: {'identifier': 'move_square', 'dependencies': OrderedDict()}
+[0.000870] (move_turtlebot3) JobQueued: {'identifier': 'move_turtlebot3', 'dependencies': OrderedDict()}
+[0.000888] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.000905] (noise) JobQueued: {'identifier': 'noise', 'dependencies': OrderedDict()}
+[0.000920] (package_name) JobQueued: {'identifier': 'package_name', 'dependencies': OrderedDict()}
+[0.000935] (r2) JobQueued: {'identifier': 'r2', 'dependencies': OrderedDict()}
+[0.000950] (turtlebot3) JobQueued: {'identifier': 'turtlebot3', 'dependencies': OrderedDict()}
+[0.000965] (controller) JobStarted: {'identifier': 'controller'}
+[0.099787] (-) TimerEvent: {}
+[0.174236] (laser) JobStarted: {'identifier': 'laser'}
+[0.199991] (-) TimerEvent: {}
+[0.300503] (-) TimerEvent: {}
+[0.348383] (move_square) JobStarted: {'identifier': 'move_square'}
+[0.400700] (-) TimerEvent: {}
+[0.501096] (-) TimerEvent: {}
+[0.511827] (move_turtlebot3) JobStarted: {'identifier': 'move_turtlebot3'}
+[0.601293] (-) TimerEvent: {}
+[0.701693] (-) TimerEvent: {}
+[0.802174] (-) TimerEvent: {}
+[0.902470] (-) TimerEvent: {}
+[1.002904] (-) TimerEvent: {}
+[1.103242] (-) TimerEvent: {}
+[1.203692] (-) TimerEvent: {}
+[1.303970] (-) TimerEvent: {}
+[1.404312] (-) TimerEvent: {}
+[1.504738] (-) TimerEvent: {}
+[1.604996] (-) TimerEvent: {}
+[1.705362] (-) TimerEvent: {}
+[1.805809] (-) TimerEvent: {}
+[1.906234] (-) TimerEvent: {}
+[2.006634] (-) TimerEvent: {}
+[2.116282] (-) TimerEvent: {}
+[2.218795] (-) TimerEvent: {}
+[2.319183] (-) TimerEvent: {}
+[2.419432] (-) TimerEvent: {}
+[2.520843] (-) TimerEvent: {}
+[2.621082] (-) TimerEvent: {}
+[2.722094] (-) TimerEvent: {}
+[2.824461] (laser) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/laser', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/laser/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/laser/install.log', '--install-scripts', '$base/lib/laser', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/laser', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/laser/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[2.826632] (-) TimerEvent: {}
+[2.842730] (controller) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/controller', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/controller/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/controller/install.log', '--install-scripts', '$base/lib/controller', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/controller', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/controller/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[2.926736] (-) TimerEvent: {}
+[2.933105] (move_square) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/move_square', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/move_square/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/move_square/install.log', '--install-scripts', '$base/lib/move_square', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/move_square', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/move_square/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[2.979477] (move_turtlebot3) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/move_turtlebot3', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/install.log', '--install-scripts', '$base/lib/move_turtlebot3', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[3.030530] (-) TimerEvent: {}
+[3.110354] (laser) StdoutLine: {'line': b'running egg_info\n'}
+[3.111068] (laser) StdoutLine: {'line': b'creating ../../../build/laser/laser.egg-info\n'}
+[3.111358] (laser) StdoutLine: {'line': b'writing ../../../build/laser/laser.egg-info/PKG-INFO\n'}
+[3.111735] (laser) StdoutLine: {'line': b'writing dependency_links to ../../../build/laser/laser.egg-info/dependency_links.txt\n'}
+[3.112009] (laser) StdoutLine: {'line': b'writing entry points to ../../../build/laser/laser.egg-info/entry_points.txt\n'}
+[3.112269] (laser) StdoutLine: {'line': b'writing requirements to ../../../build/laser/laser.egg-info/requires.txt\n'}
+[3.112494] (laser) StdoutLine: {'line': b'writing top-level names to ../../../build/laser/laser.egg-info/top_level.txt\n'}
+[3.124698] (laser) StdoutLine: {'line': b"writing manifest file '../../../build/laser/laser.egg-info/SOURCES.txt'\n"}
+[3.130612] (-) TimerEvent: {}
+[3.184318] (laser) StdoutLine: {'line': b"reading manifest file '../../../build/laser/laser.egg-info/SOURCES.txt'\n"}
+[3.185243] (laser) StdoutLine: {'line': b"writing manifest file '../../../build/laser/laser.egg-info/SOURCES.txt'\n"}
+[3.185562] (laser) StdoutLine: {'line': b'running build\n'}
+[3.185744] (laser) StdoutLine: {'line': b'running build_py\n'}
+[3.186048] (laser) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/laser/build\n'}
+[3.186242] (laser) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/laser/build/lib\n'}
+[3.186427] (laser) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/laser/build/lib/laser\n'}
+[3.186640] (laser) StdoutLine: {'line': b'copying laser/laser.py -> /home/dcs/Desktop/Lab/Lab1/build/laser/build/lib/laser\n'}
+[3.186913] (laser) StdoutLine: {'line': b'copying laser/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/laser/build/lib/laser\n'}
+[3.187361] (laser) StdoutLine: {'line': b'running install\n'}
+[3.188256] (laser) StdoutLine: {'line': b'running install_lib\n'}
+[3.189261] (laser) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser\n'}
+[3.189519] (laser) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/laser/build/lib/laser/laser.py -> /home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser\n'}
+[3.189793] (laser) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/laser/build/lib/laser/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser\n'}
+[3.190425] (laser) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser/laser.py to laser.cpython-38.pyc\n'}
+[3.191626] (laser) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser/__init__.py to __init__.cpython-38.pyc\n'}
+[3.191980] (laser) StdoutLine: {'line': b'running install_data\n'}
+[3.192590] (laser) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/laser/share/ament_index\n'}
+[3.192788] (laser) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/laser/share/ament_index/resource_index\n'}
+[3.192975] (laser) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/laser/share/ament_index/resource_index/packages\n'}
+[3.193181] (laser) StdoutLine: {'line': b'copying resource/laser -> /home/dcs/Desktop/Lab/Lab1/install/laser/share/ament_index/resource_index/packages\n'}
+[3.193448] (laser) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/laser/share/laser\n'}
+[3.193670] (laser) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.197262] (laser) StderrLine: {'line': b'  File "/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser/laser.py", line 37\n'}
+[3.197437] (laser) StderrLine: {'line': b'    self.scan_callback,\n'}
+[3.197508] (laser) StderrLine: {'line': b'    ^\n'}
+[3.197569] (laser) StderrLine: {'line': b'SyntaxError: invalid syntax\n'}
+[3.197628] (laser) StderrLine: {'line': b'\n'}
+[3.197685] (laser) StdoutLine: {'line': b'Copying ../../../build/laser/laser.egg-info to /home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser-0.0.0-py3.8.egg-info\n'}
+[3.198713] (laser) StdoutLine: {'line': b'running install_scripts\n'}
+[3.230699] (-) TimerEvent: {}
+[3.232340] (laser) StdoutLine: {'line': b'Installing laser_node script to /home/dcs/Desktop/Lab/Lab1/install/laser/lib/laser\n'}
+[3.232883] (laser) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/laser/install.log'\n"}
+[3.260528] (move_turtlebot3) StdoutLine: {'line': b'running egg_info\n'}
+[3.260998] (move_turtlebot3) StdoutLine: {'line': b'creating ../../../build/move_turtlebot3/move_turtlebot3.egg-info\n'}
+[3.261140] (move_turtlebot3) StdoutLine: {'line': b'writing ../../../build/move_turtlebot3/move_turtlebot3.egg-info/PKG-INFO\n'}
+[3.261373] (move_turtlebot3) StdoutLine: {'line': b'writing dependency_links to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/dependency_links.txt\n'}
+[3.261513] (move_turtlebot3) StdoutLine: {'line': b'writing entry points to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/entry_points.txt\n'}
+[3.261649] (move_turtlebot3) StdoutLine: {'line': b'writing requirements to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/requires.txt\n'}
+[3.261721] (move_turtlebot3) StdoutLine: {'line': b'writing top-level names to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/top_level.txt\n'}
+[3.262982] (move_turtlebot3) StdoutLine: {'line': b"writing manifest file '../../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'\n"}
+[3.289009] (laser) CommandEnded: {'returncode': 0}
+[3.322292] (controller) StdoutLine: {'line': b'running egg_info\n'}
+[3.322544] (controller) StdoutLine: {'line': b'creating ../../../build/controller/controller.egg-info\n'}
+[3.322617] (controller) StdoutLine: {'line': b'writing ../../../build/controller/controller.egg-info/PKG-INFO\n'}
+[3.322679] (controller) StdoutLine: {'line': b'writing dependency_links to ../../../build/controller/controller.egg-info/dependency_links.txt\n'}
+[3.322740] (controller) StdoutLine: {'line': b'writing entry points to ../../../build/controller/controller.egg-info/entry_points.txt\n'}
+[3.322799] (controller) StdoutLine: {'line': b'writing requirements to ../../../build/controller/controller.egg-info/requires.txt\n'}
+[3.322862] (controller) StdoutLine: {'line': b'writing top-level names to ../../../build/controller/controller.egg-info/top_level.txt\n'}
+[3.322920] (controller) StdoutLine: {'line': b"writing manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[3.323083] (move_square) StdoutLine: {'line': b'running egg_info\n'}
+[3.323201] (move_square) StdoutLine: {'line': b'creating ../../../build/move_square/move_square.egg-info\n'}
+[3.323269] (move_square) StdoutLine: {'line': b'writing ../../../build/move_square/move_square.egg-info/PKG-INFO\n'}
+[3.323332] (move_square) StdoutLine: {'line': b'writing dependency_links to ../../../build/move_square/move_square.egg-info/dependency_links.txt\n'}
+[3.323394] (move_square) StdoutLine: {'line': b'writing entry points to ../../../build/move_square/move_square.egg-info/entry_points.txt\n'}
+[3.323514] (move_square) StdoutLine: {'line': b'writing requirements to ../../../build/move_square/move_square.egg-info/requires.txt\n'}
+[3.323580] (move_square) StdoutLine: {'line': b'writing top-level names to ../../../build/move_square/move_square.egg-info/top_level.txt\n'}
+[3.323640] (move_square) StdoutLine: {'line': b"writing manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'\n"}
+[3.323700] (move_turtlebot3) StdoutLine: {'line': b"reading manifest file '../../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'\n"}
+[3.323767] (move_turtlebot3) StdoutLine: {'line': b"writing manifest file '../../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'\n"}
+[3.323828] (move_turtlebot3) StdoutLine: {'line': b'running build\n'}
+[3.323922] (move_turtlebot3) StdoutLine: {'line': b'running build_py\n'}
+[3.323979] (move_turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build\n'}
+[3.324035] (move_turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build/lib\n'}
+[3.324090] (move_turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build/lib/move_turtlebot3\n'}
+[3.324147] (move_turtlebot3) StdoutLine: {'line': b'copying move_turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build/lib/move_turtlebot3\n'}
+[3.324230] (move_turtlebot3) StdoutLine: {'line': b'copying move_turtlebot3/trajectory.py -> /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build/lib/move_turtlebot3\n'}
+[3.324289] (move_turtlebot3) StdoutLine: {'line': b'running install\n'}
+[3.324347] (move_turtlebot3) StdoutLine: {'line': b'running install_lib\n'}
+[3.324722] (move_turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3\n'}
+[3.324805] (move_turtlebot3) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build/lib/move_turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3\n'}
+[3.324871] (move_turtlebot3) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build/lib/move_turtlebot3/trajectory.py -> /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3\n'}
+[3.325225] (move_turtlebot3) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3/__init__.py to __init__.cpython-38.pyc\n'}
+[3.326269] (move_turtlebot3) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3/trajectory.py to trajectory.cpython-38.pyc\n'}
+[3.326757] (move_turtlebot3) StdoutLine: {'line': b'running install_data\n'}
+[3.327220] (move_turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/ament_index\n'}
+[3.327325] (move_turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/ament_index/resource_index\n'}
+[3.327419] (move_turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/ament_index/resource_index/packages\n'}
+[3.327537] (move_turtlebot3) StdoutLine: {'line': b'copying resource/move_turtlebot3 -> /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/ament_index/resource_index/packages\n'}
+[3.327606] (move_turtlebot3) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3\n'}
+[3.327668] (move_turtlebot3) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.330924] (-) TimerEvent: {}
+[3.335711] (move_turtlebot3) StdoutLine: {'line': b'Copying ../../../build/move_turtlebot3/move_turtlebot3.egg-info to /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3-0.0.0-py3.8.egg-info\n'}
+[3.336507] (move_turtlebot3) StdoutLine: {'line': b'running install_scripts\n'}
+[3.362203] (move_square) StdoutLine: {'line': b"reading manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'\n"}
+[3.363686] (move_square) StdoutLine: {'line': b"writing manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'\n"}
+[3.364603] (move_square) StdoutLine: {'line': b'running build\n'}
+[3.365030] (move_square) StdoutLine: {'line': b'running build_py\n'}
+[3.365879] (move_square) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build\n'}
+[3.366351] (move_square) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib\n'}
+[3.366842] (move_square) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square\n'}
+[3.367331] (move_square) StdoutLine: {'line': b'copying move_square/square.py -> /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square\n'}
+[3.368821] (controller) StdoutLine: {'line': b"reading manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[3.370971] (controller) StdoutLine: {'line': b"writing manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[3.371660] (move_square) StdoutLine: {'line': b'copying move_square/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square\n'}
+[3.371893] (controller) StdoutLine: {'line': b'running build\n'}
+[3.372073] (controller) StdoutLine: {'line': b'running build_py\n'}
+[3.372156] (move_square) StdoutLine: {'line': b'running install\n'}
+[3.372505] (controller) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/controller/build\n'}
+[3.372710] (controller) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib\n'}
+[3.372887] (controller) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller\n'}
+[3.373095] (controller) StdoutLine: {'line': b'copying controller/controller.py -> /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller\n'}
+[3.374114] (controller) StdoutLine: {'line': b'copying controller/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller\n'}
+[3.374286] (controller) StdoutLine: {'line': b'running install\n'}
+[3.375036] (controller) StdoutLine: {'line': b'running install_lib\n'}
+[3.375931] (controller) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller\n'}
+[3.376091] (controller) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller/controller.py -> /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller\n'}
+[3.376213] (controller) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller\n'}
+[3.376606] (controller) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller/controller.py to controller.cpython-38.pyc\n'}
+[3.377760] (controller) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller/__init__.py to __init__.cpython-38.pyc\n'}
+[3.377888] (controller) StdoutLine: {'line': b'running install_data\n'}
+[3.378324] (controller) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index\n'}
+[3.378508] (controller) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index/resource_index\n'}
+[3.378594] (controller) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index/resource_index/packages\n'}
+[3.378675] (controller) StdoutLine: {'line': b'copying resource/controller -> /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index/resource_index/packages\n'}
+[3.378768] (controller) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/controller/share/controller\n'}
+[3.378842] (controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.380156] (controller) StdoutLine: {'line': b'Copying ../../../build/controller/controller.egg-info to /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller-0.0.0-py3.8.egg-info\n'}
+[3.380986] (controller) StdoutLine: {'line': b'running install_scripts\n'}
+[3.382605] (move_turtlebot3) StdoutLine: {'line': b'Installing traj script to /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/move_turtlebot3\n'}
+[3.384557] (move_turtlebot3) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/install.log'\n"}
+[3.384683] (move_square) StdoutLine: {'line': b'running install_lib\n'}
+[3.385453] (move_square) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square\n'}
+[3.385741] (move_square) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square/square.py -> /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square\n'}
+[3.385829] (move_square) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square\n'}
+[3.386131] (move_square) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square/square.py to square.cpython-38.pyc\n'}
+[3.389483] (move_square) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square/__init__.py to __init__.cpython-38.pyc\n'}
+[3.389555] (move_square) StdoutLine: {'line': b'running install_data\n'}
+[3.389615] (move_square) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index\n'}
+[3.389674] (move_square) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index\n'}
+[3.389731] (move_square) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index/packages\n'}
+[3.389788] (move_square) StdoutLine: {'line': b'copying resource/move_square -> /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index/packages\n'}
+[3.389846] (move_square) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square\n'}
+[3.389903] (move_square) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.392246] (move_square) StdoutLine: {'line': b'Copying ../../../build/move_square/move_square.egg-info to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square-0.0.0-py3.8.egg-info\n'}
+[3.392358] (move_square) StdoutLine: {'line': b'running install_scripts\n'}
+[3.419636] (controller) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/controller/install.log'\n"}
+[3.419787] (move_square) StdoutLine: {'line': b'Installing square script to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/move_square\n'}
+[3.428319] (move_square) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/move_square/install.log'\n"}
+[3.431021] (-) TimerEvent: {}
+[3.519897] (laser) JobEnded: {'identifier': 'laser', 'rc': 0}
+[3.522108] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[3.532487] (-) TimerEvent: {}
+[3.632748] (-) TimerEvent: {}
+[3.685288] (move_square) CommandEnded: {'returncode': 0}
+[3.732949] (-) TimerEvent: {}
+[3.805441] (move_square) JobEnded: {'identifier': 'move_square', 'rc': 0}
+[3.805854] (move_turtlebot3) CommandEnded: {'returncode': 0}
+[3.833078] (-) TimerEvent: {}
+[3.929065] (move_turtlebot3) JobEnded: {'identifier': 'move_turtlebot3', 'rc': 0}
+[3.929358] (controller) CommandEnded: {'returncode': 0}
+[3.933149] (-) TimerEvent: {}
+[4.033429] (-) TimerEvent: {}
+[4.049580] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[4.050342] (noise) JobStarted: {'identifier': 'noise'}
+[4.133541] (-) TimerEvent: {}
+[4.206806] (package_name) JobStarted: {'identifier': 'package_name'}
+[4.233675] (-) TimerEvent: {}
+[4.334046] (-) TimerEvent: {}
+[4.370322] (r2) JobStarted: {'identifier': 'r2'}
+[4.434157] (-) TimerEvent: {}
+[4.534607] (-) TimerEvent: {}
+[4.635138] (-) TimerEvent: {}
+[4.735611] (-) TimerEvent: {}
+[4.835987] (-) TimerEvent: {}
+[4.936413] (-) TimerEvent: {}
+[5.036958] (-) TimerEvent: {}
+[5.137352] (-) TimerEvent: {}
+[5.237686] (-) TimerEvent: {}
+[5.338093] (-) TimerEvent: {}
+[5.438380] (-) TimerEvent: {}
+[5.538700] (-) TimerEvent: {}
+[5.639139] (-) TimerEvent: {}
+[5.739628] (-) TimerEvent: {}
+[5.840340] (-) TimerEvent: {}
+[5.941111] (-) TimerEvent: {}
+[6.042056] (-) TimerEvent: {}
+[6.142818] (-) TimerEvent: {}
+[6.248216] (-) TimerEvent: {}
+[6.348571] (-) TimerEvent: {}
+[6.449152] (-) TimerEvent: {}
+[6.507570] (noise) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/noise', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/noise/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/noise/install.log', '--install-scripts', '$base/lib/noise', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/noise', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/noise', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/noise/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[6.549811] (-) TimerEvent: {}
+[6.652719] (-) TimerEvent: {}
+[6.667848] (package_name) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/package_name', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/package_name/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/package_name/install.log', '--install-scripts', '$base/lib/package_name', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/package_name', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/package_name/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[6.673807] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_py_pkg', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/install.log', '--install-scripts', '$base/lib/my_py_pkg', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[6.692670] (r2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/r2', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/r2/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/r2/install.log', '--install-scripts', '$base/lib/r2', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/r2', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/r2/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[6.752836] (-) TimerEvent: {}
+[6.853243] (-) TimerEvent: {}
+[6.914444] (noise) StdoutLine: {'line': b'running egg_info\n'}
+[6.914834] (noise) StdoutLine: {'line': b'creating ../../../build/noise/noise.egg-info\n'}
+[6.914983] (noise) StdoutLine: {'line': b'writing ../../../build/noise/noise.egg-info/PKG-INFO\n'}
+[6.915183] (noise) StdoutLine: {'line': b'writing dependency_links to ../../../build/noise/noise.egg-info/dependency_links.txt\n'}
+[6.915316] (noise) StdoutLine: {'line': b'writing entry points to ../../../build/noise/noise.egg-info/entry_points.txt\n'}
+[6.915464] (noise) StdoutLine: {'line': b'writing requirements to ../../../build/noise/noise.egg-info/requires.txt\n'}
+[6.915536] (noise) StdoutLine: {'line': b'writing top-level names to ../../../build/noise/noise.egg-info/top_level.txt\n'}
+[6.916676] (noise) StdoutLine: {'line': b"writing manifest file '../../../build/noise/noise.egg-info/SOURCES.txt'\n"}
+[6.953327] (-) TimerEvent: {}
+[6.982422] (noise) StdoutLine: {'line': b"reading manifest file '../../../build/noise/noise.egg-info/SOURCES.txt'\n"}
+[6.982579] (noise) StdoutLine: {'line': b"writing manifest file '../../../build/noise/noise.egg-info/SOURCES.txt'\n"}
+[6.982654] (noise) StdoutLine: {'line': b'running build\n'}
+[6.982720] (noise) StdoutLine: {'line': b'running build_py\n'}
+[6.982783] (noise) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/noise/build\n'}
+[6.982845] (noise) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/noise/build/lib\n'}
+[6.982906] (noise) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/noise/build/lib/noise\n'}
+[6.982967] (noise) StdoutLine: {'line': b'copying noise/noise.py -> /home/dcs/Desktop/Lab/Lab1/build/noise/build/lib/noise\n'}
+[6.983077] (noise) StdoutLine: {'line': b'copying noise/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/noise/build/lib/noise\n'}
+[6.983147] (noise) StdoutLine: {'line': b'running install\n'}
+[6.987655] (noise) StdoutLine: {'line': b'running install_lib\n'}
+[6.987786] (noise) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages/noise\n'}
+[6.987854] (noise) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/noise/build/lib/noise/noise.py -> /home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages/noise\n'}
+[6.987925] (noise) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/noise/build/lib/noise/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages/noise\n'}
+[6.987988] (noise) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages/noise/noise.py to noise.cpython-38.pyc\n'}
+[6.988050] (noise) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages/noise/__init__.py to __init__.cpython-38.pyc\n'}
+[6.988111] (noise) StdoutLine: {'line': b'running install_data\n'}
+[6.992278] (noise) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/noise/share/ament_index\n'}
+[6.992468] (noise) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/noise/share/ament_index/resource_index\n'}
+[6.992547] (noise) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/noise/share/ament_index/resource_index/packages\n'}
+[6.992613] (noise) StdoutLine: {'line': b'copying resource/noise -> /home/dcs/Desktop/Lab/Lab1/install/noise/share/ament_index/resource_index/packages\n'}
+[6.992708] (noise) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/noise/share/noise\n'}
+[6.992777] (noise) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.994304] (noise) StdoutLine: {'line': b'Copying ../../../build/noise/noise.egg-info to /home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages/noise-0.0.0-py3.8.egg-info\n'}
+[6.995126] (noise) StdoutLine: {'line': b'running install_scripts\n'}
+[7.003287] (package_name) StdoutLine: {'line': b'running egg_info\n'}
+[7.003813] (package_name) StdoutLine: {'line': b'creating ../../../build/package_name/package_name.egg-info\n'}
+[7.003976] (package_name) StdoutLine: {'line': b'writing ../../../build/package_name/package_name.egg-info/PKG-INFO\n'}
+[7.004202] (package_name) StdoutLine: {'line': b'writing dependency_links to ../../../build/package_name/package_name.egg-info/dependency_links.txt\n'}
+[7.004638] (package_name) StdoutLine: {'line': b'writing entry points to ../../../build/package_name/package_name.egg-info/entry_points.txt\n'}
+[7.004797] (package_name) StdoutLine: {'line': b'writing requirements to ../../../build/package_name/package_name.egg-info/requires.txt\n'}
+[7.004875] (package_name) StdoutLine: {'line': b'writing top-level names to ../../../build/package_name/package_name.egg-info/top_level.txt\n'}
+[7.006351] (package_name) StdoutLine: {'line': b"writing manifest file '../../../build/package_name/package_name.egg-info/SOURCES.txt'\n"}
+[7.032282] (noise) StdoutLine: {'line': b'Installing noise script to /home/dcs/Desktop/Lab/Lab1/install/noise/lib/noise\n'}
+[7.032457] (noise) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/noise/install.log'\n"}
+[7.038512] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[7.038829] (my_py_pkg) StdoutLine: {'line': b'creating ../../../build/my_py_pkg/my_py_pkg.egg-info\n'}
+[7.038970] (my_py_pkg) StdoutLine: {'line': b'writing ../../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[7.039201] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[7.039331] (my_py_pkg) StdoutLine: {'line': b'writing entry points to ../../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt\n'}
+[7.039562] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[7.039693] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[7.049398] (package_name) StdoutLine: {'line': b"reading manifest file '../../../build/package_name/package_name.egg-info/SOURCES.txt'\n"}
+[7.050311] (package_name) StdoutLine: {'line': b"writing manifest file '../../../build/package_name/package_name.egg-info/SOURCES.txt'\n"}
+[7.050518] (package_name) StdoutLine: {'line': b'running build\n'}
+[7.050597] (package_name) StdoutLine: {'line': b'running build_py\n'}
+[7.050661] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[7.050922] (package_name) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/package_name/build\n'}
+[7.051301] (package_name) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/package_name/build/lib\n'}
+[7.051628] (package_name) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/package_name/build/lib/package_name\n'}
+[7.051978] (package_name) StdoutLine: {'line': b'copying package_name/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/package_name/build/lib/package_name\n'}
+[7.052403] (package_name) StdoutLine: {'line': b'copying package_name/my_node.py -> /home/dcs/Desktop/Lab/Lab1/build/package_name/build/lib/package_name\n'}
+[7.053403] (-) TimerEvent: {}
+[7.053630] (package_name) StdoutLine: {'line': b'running install\n'}
+[7.054760] (package_name) StdoutLine: {'line': b'running install_lib\n'}
+[7.056045] (package_name) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages/package_name\n'}
+[7.056475] (package_name) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/package_name/build/lib/package_name/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages/package_name\n'}
+[7.056898] (package_name) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/package_name/build/lib/package_name/my_node.py -> /home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages/package_name\n'}
+[7.057663] (package_name) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages/package_name/__init__.py to __init__.cpython-38.pyc\n'}
+[7.059051] (package_name) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages/package_name/my_node.py to my_node.cpython-38.pyc\n'}
+[7.059764] (package_name) StdoutLine: {'line': b'running install_data\n'}
+[7.060779] (package_name) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/package_name/share/ament_index\n'}
+[7.061272] (package_name) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/package_name/share/ament_index/resource_index\n'}
+[7.061739] (package_name) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/package_name/share/ament_index/resource_index/packages\n'}
+[7.062220] (package_name) StdoutLine: {'line': b'copying resource/package_name -> /home/dcs/Desktop/Lab/Lab1/install/package_name/share/ament_index/resource_index/packages\n'}
+[7.062782] (package_name) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name\n'}
+[7.063270] (package_name) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.066128] (package_name) StdoutLine: {'line': b'Copying ../../../build/package_name/package_name.egg-info to /home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages/package_name-0.0.0-py3.8.egg-info\n'}
+[7.067818] (package_name) StdoutLine: {'line': b'running install_scripts\n'}
+[7.076397] (noise) CommandEnded: {'returncode': 0}
+[7.092540] (package_name) StdoutLine: {'line': b'Installing my_node script to /home/dcs/Desktop/Lab/Lab1/install/package_name/lib/package_name\n'}
+[7.092681] (package_name) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/package_name/install.log'\n"}
+[7.110709] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[7.111375] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[7.111517] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[7.111591] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[7.111681] (my_py_pkg) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build\n'}
+[7.111777] (my_py_pkg) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build/lib\n'}
+[7.111843] (my_py_pkg) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[7.111929] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[7.112019] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[7.116926] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[7.117652] (my_py_pkg) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg\n'}
+[7.117756] (my_py_pkg) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg\n'}
+[7.117856] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg/__init__.py to __init__.cpython-38.pyc\n'}
+[7.119322] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[7.119434] (my_py_pkg) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/ament_index\n'}
+[7.119504] (my_py_pkg) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/ament_index/resource_index\n'}
+[7.119879] (my_py_pkg) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/ament_index/resource_index/packages\n'}
+[7.119973] (my_py_pkg) StdoutLine: {'line': b'copying resource/my_py_pkg -> /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/ament_index/resource_index/packages\n'}
+[7.120041] (my_py_pkg) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg\n'}
+[7.120104] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.120640] (r2) StdoutLine: {'line': b'running egg_info\n'}
+[7.120751] (r2) StdoutLine: {'line': b'creating ../../../build/r2/r2.egg-info\n'}
+[7.121109] (r2) StdoutLine: {'line': b'writing ../../../build/r2/r2.egg-info/PKG-INFO\n'}
+[7.121209] (r2) StdoutLine: {'line': b'writing dependency_links to ../../../build/r2/r2.egg-info/dependency_links.txt\n'}
+[7.121276] (r2) StdoutLine: {'line': b'writing entry points to ../../../build/r2/r2.egg-info/entry_points.txt\n'}
+[7.121371] (r2) StdoutLine: {'line': b'writing requirements to ../../../build/r2/r2.egg-info/requires.txt\n'}
+[7.121449] (r2) StdoutLine: {'line': b'writing top-level names to ../../../build/r2/r2.egg-info/top_level.txt\n'}
+[7.122585] (my_py_pkg) StdoutLine: {'line': b'Copying ../../../build/my_py_pkg/my_py_pkg.egg-info to /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info\n'}
+[7.122760] (r2) StdoutLine: {'line': b"writing manifest file '../../../build/r2/r2.egg-info/SOURCES.txt'\n"}
+[7.127871] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[7.143786] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/install.log'\n"}
+[7.153922] (r2) StdoutLine: {'line': b"reading manifest file '../../../build/r2/r2.egg-info/SOURCES.txt'\n"}
+[7.154068] (-) TimerEvent: {}
+[7.154846] (r2) StdoutLine: {'line': b"writing manifest file '../../../build/r2/r2.egg-info/SOURCES.txt'\n"}
+[7.154986] (r2) StdoutLine: {'line': b'running build\n'}
+[7.155061] (r2) StdoutLine: {'line': b'running build_py\n'}
+[7.161641] (r2) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/r2/build\n'}
+[7.161866] (r2) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib\n'}
+[7.161939] (r2) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2\n'}
+[7.162003] (r2) StdoutLine: {'line': b'copying r2/printer.py -> /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2\n'}
+[7.162097] (r2) StdoutLine: {'line': b'copying r2/subscriber.py -> /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2\n'}
+[7.162180] (r2) StdoutLine: {'line': b'copying r2/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2\n'}
+[7.162262] (r2) StdoutLine: {'line': b'copying r2/publisher.py -> /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2\n'}
+[7.163471] (r2) StdoutLine: {'line': b'running install\n'}
+[7.164625] (r2) StdoutLine: {'line': b'running install_lib\n'}
+[7.168071] (r2) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2\n'}
+[7.168332] (r2) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2/printer.py -> /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2\n'}
+[7.168444] (r2) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2/subscriber.py -> /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2\n'}
+[7.168567] (r2) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2\n'}
+[7.168638] (r2) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/r2/build/lib/r2/publisher.py -> /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2\n'}
+[7.169034] (r2) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2/printer.py to printer.cpython-38.pyc\n'}
+[7.170300] (r2) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2/subscriber.py to subscriber.cpython-38.pyc\n'}
+[7.170633] (r2) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2/__init__.py to __init__.cpython-38.pyc\n'}
+[7.170767] (r2) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2/publisher.py to publisher.cpython-38.pyc\n'}
+[7.171095] (r2) StdoutLine: {'line': b'running install_data\n'}
+[7.171591] (r2) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/r2/share/ament_index\n'}
+[7.171785] (r2) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/r2/share/ament_index/resource_index\n'}
+[7.171886] (r2) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/r2/share/ament_index/resource_index/packages\n'}
+[7.171991] (r2) StdoutLine: {'line': b'copying resource/r2 -> /home/dcs/Desktop/Lab/Lab1/install/r2/share/ament_index/resource_index/packages\n'}
+[7.172057] (r2) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/r2/share/r2\n'}
+[7.172120] (r2) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.174201] (r2) StdoutLine: {'line': b'Copying ../../../build/r2/r2.egg-info to /home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages/r2-0.0.0-py3.8.egg-info\n'}
+[7.175978] (r2) StdoutLine: {'line': b'running install_scripts\n'}
+[7.204290] (r2) StdoutLine: {'line': b'Installing prt script to /home/dcs/Desktop/Lab/Lab1/install/r2/lib/r2\n'}
+[7.205301] (r2) StdoutLine: {'line': b'Installing pub script to /home/dcs/Desktop/Lab/Lab1/install/r2/lib/r2\n'}
+[7.212350] (r2) StdoutLine: {'line': b'Installing sub script to /home/dcs/Desktop/Lab/Lab1/install/r2/lib/r2\n'}
+[7.215352] (r2) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/r2/install.log'\n"}
+[7.254158] (-) TimerEvent: {}
+[7.255063] (noise) JobEnded: {'identifier': 'noise', 'rc': 0}
+[7.256304] (turtlebot3) JobStarted: {'identifier': 'turtlebot3'}
+[7.354245] (-) TimerEvent: {}
+[7.437486] (my_py_pkg) CommandEnded: {'returncode': 0}
+[7.454369] (-) TimerEvent: {}
+[7.554939] (-) TimerEvent: {}
+[7.565561] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[7.565883] (package_name) CommandEnded: {'returncode': 0}
+[7.655060] (-) TimerEvent: {}
+[7.691823] (package_name) JobEnded: {'identifier': 'package_name', 'rc': 0}
+[7.692149] (r2) CommandEnded: {'returncode': 0}
+[7.755470] (-) TimerEvent: {}
+[7.812061] (r2) JobEnded: {'identifier': 'r2', 'rc': 0}
+[7.855610] (-) TimerEvent: {}
+[7.955997] (-) TimerEvent: {}
+[8.057149] (-) TimerEvent: {}
+[8.157676] (-) TimerEvent: {}
+[8.257972] (-) TimerEvent: {}
+[8.358346] (-) TimerEvent: {}
+[8.458623] (-) TimerEvent: {}
+[8.532797] (turtlebot3) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/turtlebot3', 'build', '--build-base', '/home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build', 'install', '--record', '/home/dcs/Desktop/Lab/Lab1/build/turtlebot3/install.log', '--install-scripts', '$base/lib/turtlebot3', '--single-version-externally-managed'], 'cwd': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'dcs', 'SSH_AGENT_PID': '3755', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/dcs', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3575', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'dcs', 'JOURNAL_STREAM': '8:182361', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dcs', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models::/opt/ros/foxy/share/turtlebot3_gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/dcs-KVM:@/tmp/.ICE-unix/3809,unix/dcs-KVM:/tmp/.ICE-unix/3809', 'INVOCATION_ID': '43f12ab1ec6a42fba4b314c8debc9465', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91cf8a24_b15f_4c08_8cee_c73e9b8e7790', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.86', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dcs/Desktop/Lab/Lab1/build/turtlebot3', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=4cee2944208df72430d38d2169b2d67b', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dcs/Desktop/Lab/Lab1/build/turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[8.558928] (-) TimerEvent: {}
+[8.659242] (-) TimerEvent: {}
+[8.742358] (turtlebot3) StdoutLine: {'line': b'running egg_info\n'}
+[8.742716] (turtlebot3) StdoutLine: {'line': b'creating ../../../build/turtlebot3/turtlebot3.egg-info\n'}
+[8.742836] (turtlebot3) StdoutLine: {'line': b'writing ../../../build/turtlebot3/turtlebot3.egg-info/PKG-INFO\n'}
+[8.743048] (turtlebot3) StdoutLine: {'line': b'writing dependency_links to ../../../build/turtlebot3/turtlebot3.egg-info/dependency_links.txt\n'}
+[8.743158] (turtlebot3) StdoutLine: {'line': b'writing entry points to ../../../build/turtlebot3/turtlebot3.egg-info/entry_points.txt\n'}
+[8.743253] (turtlebot3) StdoutLine: {'line': b'writing requirements to ../../../build/turtlebot3/turtlebot3.egg-info/requires.txt\n'}
+[8.743345] (turtlebot3) StdoutLine: {'line': b'writing top-level names to ../../../build/turtlebot3/turtlebot3.egg-info/top_level.txt\n'}
+[8.744491] (turtlebot3) StdoutLine: {'line': b"writing manifest file '../../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'\n"}
+[8.759331] (-) TimerEvent: {}
+[8.772892] (turtlebot3) StdoutLine: {'line': b"reading manifest file '../../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'\n"}
+[8.773475] (turtlebot3) StdoutLine: {'line': b"writing manifest file '../../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'\n"}
+[8.773648] (turtlebot3) StdoutLine: {'line': b'running build\n'}
+[8.773876] (turtlebot3) StdoutLine: {'line': b'running build_py\n'}
+[8.773950] (turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build\n'}
+[8.774029] (turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib\n'}
+[8.774125] (turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib/turtlebot3\n'}
+[8.774206] (turtlebot3) StdoutLine: {'line': b'copying turtlebot3/turtlebot3.py -> /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib/turtlebot3\n'}
+[8.778046] (turtlebot3) StdoutLine: {'line': b'copying turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib/turtlebot3\n'}
+[8.778207] (turtlebot3) StdoutLine: {'line': b'copying turtlebot3/run_10_trials.py -> /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib/turtlebot3\n'}
+[8.778314] (turtlebot3) StdoutLine: {'line': b'running install\n'}
+[8.779073] (turtlebot3) StdoutLine: {'line': b'running install_lib\n'}
+[8.779924] (turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3\n'}
+[8.780040] (turtlebot3) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib/turtlebot3/turtlebot3.py -> /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3\n'}
+[8.780140] (turtlebot3) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib/turtlebot3/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3\n'}
+[8.780259] (turtlebot3) StdoutLine: {'line': b'copying /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build/lib/turtlebot3/run_10_trials.py -> /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3\n'}
+[8.780665] (turtlebot3) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3/turtlebot3.py to turtlebot3.cpython-38.pyc\n'}
+[8.782486] (turtlebot3) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3/__init__.py to __init__.cpython-38.pyc\n'}
+[8.782625] (turtlebot3) StdoutLine: {'line': b'byte-compiling /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3/run_10_trials.py to run_10_trials.cpython-38.pyc\n'}
+[8.783215] (turtlebot3) StdoutLine: {'line': b'running install_data\n'}
+[8.783663] (turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/ament_index\n'}
+[8.783797] (turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/ament_index/resource_index\n'}
+[8.783869] (turtlebot3) StdoutLine: {'line': b'creating /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/ament_index/resource_index/packages\n'}
+[8.783931] (turtlebot3) StdoutLine: {'line': b'copying resource/turtlebot3 -> /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/ament_index/resource_index/packages\n'}
+[8.784023] (turtlebot3) StdoutLine: {'line': b'copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3\n'}
+[8.784101] (turtlebot3) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.786632] (turtlebot3) StdoutLine: {'line': b'Copying ../../../build/turtlebot3/turtlebot3.egg-info to /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages/turtlebot3-0.0.0-py3.8.egg-info\n'}
+[8.787362] (turtlebot3) StdoutLine: {'line': b'running install_scripts\n'}
+[8.802498] (turtlebot3) StdoutLine: {'line': b'Installing bot3 script to /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/turtlebot3\n'}
+[8.802685] (turtlebot3) StdoutLine: {'line': b'Installing run_10_trials script to /home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/turtlebot3\n'}
+[8.802896] (turtlebot3) StdoutLine: {'line': b"writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/turtlebot3/install.log'\n"}
+[8.836280] (turtlebot3) CommandEnded: {'returncode': 0}
+[8.859628] (-) TimerEvent: {}
+[8.960149] (-) TimerEvent: {}
+[8.963522] (turtlebot3) JobEnded: {'identifier': 'turtlebot3', 'rc': 0}
+[8.966837] (-) EventReactorShutdown: {}

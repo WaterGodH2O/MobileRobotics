@@ -1,0 +1,21 @@
+[2.639s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/install.log --install-scripts $base/lib/move_turtlebot3 --single-version-externally-managed
+[3.162s] running egg_info
+[3.163s] writing ../../../build/move_turtlebot3/move_turtlebot3.egg-info/PKG-INFO
+[3.163s] writing dependency_links to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/dependency_links.txt
+[3.164s] writing entry points to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/entry_points.txt
+[3.164s] writing requirements to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/requires.txt
+[3.164s] writing top-level names to ../../../build/move_turtlebot3/move_turtlebot3.egg-info/top_level.txt
+[3.195s] reading manifest file '../../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'
+[3.196s] writing manifest file '../../../build/move_turtlebot3/move_turtlebot3.egg-info/SOURCES.txt'
+[3.196s] running build
+[3.196s] running build_py
+[3.196s] running install
+[3.199s] running install_lib
+[3.199s] running install_data
+[3.199s] running install_egg_info
+[3.204s] removing '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3-0.0.0-py3.8.egg-info' (and everything under it)
+[3.205s] Copying ../../../build/move_turtlebot3/move_turtlebot3.egg-info to /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages/move_turtlebot3-0.0.0-py3.8.egg-info
+[3.205s] running install_scripts
+[3.226s] Installing traj script to /home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/move_turtlebot3
+[3.226s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/install.log'
+[3.993s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/install.log --install-scripts $base/lib/move_turtlebot3 --single-version-externally-managed

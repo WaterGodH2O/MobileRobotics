@@ -1,0 +1,21 @@
+[2.866s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_square/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_square build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_square/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_square/install.log --install-scripts $base/lib/move_square --single-version-externally-managed
+[3.180s] running egg_info
+[3.181s] writing ../../../build/move_square/move_square.egg-info/PKG-INFO
+[3.181s] writing dependency_links to ../../../build/move_square/move_square.egg-info/dependency_links.txt
+[3.182s] writing entry points to ../../../build/move_square/move_square.egg-info/entry_points.txt
+[3.183s] writing requirements to ../../../build/move_square/move_square.egg-info/requires.txt
+[3.183s] writing top-level names to ../../../build/move_square/move_square.egg-info/top_level.txt
+[3.215s] reading manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+[3.216s] writing manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+[3.216s] running build
+[3.216s] running build_py
+[3.217s] running install
+[3.218s] running install_lib
+[3.219s] running install_data
+[3.220s] running install_egg_info
+[3.223s] removing '/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square-0.0.0-py3.8.egg-info' (and everything under it)
+[3.223s] Copying ../../../build/move_square/move_square.egg-info to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square-0.0.0-py3.8.egg-info
+[3.243s] running install_scripts
+[3.278s] Installing square script to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/move_square
+[3.278s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/move_square/install.log'
+[3.514s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_square/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_square build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_square/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_square/install.log --install-scripts $base/lib/move_square --single-version-externally-managed

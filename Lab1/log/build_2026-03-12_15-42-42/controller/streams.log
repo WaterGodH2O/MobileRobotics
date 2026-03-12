@@ -1,0 +1,36 @@
+[2.843s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/controller/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/controller build --build-base /home/dcs/Desktop/Lab/Lab1/build/controller/build install --record /home/dcs/Desktop/Lab/Lab1/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed
+[3.322s] running egg_info
+[3.322s] creating ../../../build/controller/controller.egg-info
+[3.322s] writing ../../../build/controller/controller.egg-info/PKG-INFO
+[3.322s] writing dependency_links to ../../../build/controller/controller.egg-info/dependency_links.txt
+[3.322s] writing entry points to ../../../build/controller/controller.egg-info/entry_points.txt
+[3.322s] writing requirements to ../../../build/controller/controller.egg-info/requires.txt
+[3.322s] writing top-level names to ../../../build/controller/controller.egg-info/top_level.txt
+[3.322s] writing manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'
+[3.368s] reading manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'
+[3.370s] writing manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'
+[3.371s] running build
+[3.371s] running build_py
+[3.372s] creating /home/dcs/Desktop/Lab/Lab1/build/controller/build
+[3.372s] creating /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib
+[3.372s] creating /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller
+[3.372s] copying controller/controller.py -> /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller
+[3.373s] copying controller/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller
+[3.373s] running install
+[3.374s] running install_lib
+[3.375s] creating /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller
+[3.375s] copying /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller/controller.py -> /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller
+[3.375s] copying /home/dcs/Desktop/Lab/Lab1/build/controller/build/lib/controller/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller
+[3.376s] byte-compiling /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller/controller.py to controller.cpython-38.pyc
+[3.377s] byte-compiling /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller/__init__.py to __init__.cpython-38.pyc
+[3.377s] running install_data
+[3.378s] creating /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index
+[3.378s] creating /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index/resource_index
+[3.378s] creating /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index/resource_index/packages
+[3.378s] copying resource/controller -> /home/dcs/Desktop/Lab/Lab1/install/controller/share/ament_index/resource_index/packages
+[3.378s] copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/controller/share/controller
+[3.378s] running install_egg_info
+[3.379s] Copying ../../../build/controller/controller.egg-info to /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller-0.0.0-py3.8.egg-info
+[3.380s] running install_scripts
+[3.419s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/controller/install.log'
+[3.929s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/controller/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/controller build --build-base /home/dcs/Desktop/Lab/Lab1/build/controller/build install --record /home/dcs/Desktop/Lab/Lab1/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed

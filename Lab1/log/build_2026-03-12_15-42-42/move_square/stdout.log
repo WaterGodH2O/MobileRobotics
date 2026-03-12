@@ -1,0 +1,35 @@
+running egg_info
+creating ../../../build/move_square/move_square.egg-info
+writing ../../../build/move_square/move_square.egg-info/PKG-INFO
+writing dependency_links to ../../../build/move_square/move_square.egg-info/dependency_links.txt
+writing entry points to ../../../build/move_square/move_square.egg-info/entry_points.txt
+writing requirements to ../../../build/move_square/move_square.egg-info/requires.txt
+writing top-level names to ../../../build/move_square/move_square.egg-info/top_level.txt
+writing manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+reading manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+writing manifest file '../../../build/move_square/move_square.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build
+creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib
+creating /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square
+copying move_square/square.py -> /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square
+copying move_square/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square
+running install
+running install_lib
+creating /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square
+copying /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square/square.py -> /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square
+copying /home/dcs/Desktop/Lab/Lab1/build/move_square/build/lib/move_square/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square
+byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square/square.py to square.cpython-38.pyc
+byte-compiling /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index
+creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index
+creating /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index/packages
+copying resource/move_square -> /home/dcs/Desktop/Lab/Lab1/install/move_square/share/ament_index/resource_index/packages
+copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square
+running install_egg_info
+Copying ../../../build/move_square/move_square.egg-info to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages/move_square-0.0.0-py3.8.egg-info
+running install_scripts
+Installing square script to /home/dcs/Desktop/Lab/Lab1/install/move_square/lib/move_square
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/move_square/install.log'
