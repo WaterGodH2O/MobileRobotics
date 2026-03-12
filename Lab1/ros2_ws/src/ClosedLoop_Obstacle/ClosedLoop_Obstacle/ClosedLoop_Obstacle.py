@@ -9,7 +9,7 @@ from geometry_msgs.msg import Twist
 
 # --- Closed-loop: P control to stop smoothly at target distance (scan only, no odom) ---
 TARGET_DISTANCE = 0.5        # (m) stop at this distance from obstacle
-KP = 1.2                     # P gain: adjust for smooth, neither sluggish nor jerky
+KP = 0.4                     # P gain: adjust for smooth, neither sluggish nor jerky
 MAX_LINEAR_SPEED = 0.6       # (m/s) cap forward speed
 FILTER_SIZE = 5              # number of recent scans for median filter (reject bad readings)
 FRONT_IDX = 0
