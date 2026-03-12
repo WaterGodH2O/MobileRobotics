@@ -97,6 +97,7 @@ def main(args=None):
             cwd=cwd,
             env=os.environ.copy(),
         )
+        
         if ret.returncode != 0:
             logger.warn("bot3 exited with code %d" % ret.returncode)
 
