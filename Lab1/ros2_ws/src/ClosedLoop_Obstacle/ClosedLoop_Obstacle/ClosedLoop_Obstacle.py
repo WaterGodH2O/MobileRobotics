@@ -12,7 +12,7 @@ TARGET_DISTANCE = 0.1        # (m) stop at this distance from obstacle
 KP = 1.2                     # P gain: adjust for smooth, neither sluggish nor jerky
 MAX_LINEAR_SPEED = 0.6       # (m/s) cap forward speed
 FILTER_SIZE = 5              # number of recent scans for median filter (reject bad readings)
-
+FRONT_IDX = 0
 
 def median_filter(buf: deque) -> float:
     """Return median of buffered values; ignore inf."""
