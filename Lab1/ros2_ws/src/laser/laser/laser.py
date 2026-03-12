@@ -60,8 +60,15 @@ class LaserNode(Node):
     def print_distances(self):
         """Print front, left, back, right distances every 0.5s."""
 
-        self.get_logger().info('Subscribing to /scan')
-        self.get_logger().info(self._latest_scan)
+        # self.get_logger().info('Subscribing to /scan')
+        # self.get_logger().info(self._latest_scan)
+        r = self._latest_scan.ranges
+        self.get_logger().info(
+            f'Front: {r[self.FRONT_IDX]}, Left: {r[self.LEFT_IDX]}, '
+            f'Back: {r[self.BACK_IDX]}, Right: {r[self.RIGHT_IDX]}'
+        )
+
+
 
         # if self._latest_scan is None:
         #     return
