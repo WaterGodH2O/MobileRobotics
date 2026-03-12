@@ -380,3 +380,71 @@ Introduce some external devices to help locate the position of the robot. e.g. a
 - How should we go about equipping a robot to recover from the motion drift?
 Introduce multiple different sensors for sensing position,
 and then use the Kalman Filter algorithm to compensate for the errors of each sensor.
+
+================================================================================
+5.1
+---------------------------------------
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import LaserScan
+
+
+class LaserNode(Node):
+    """Subscribe to /scan and print front, left, back, right distances every 0.5s."""
+
+    # indices: front=0, left=89, back=179, right=269
+    FRONT_IDX = 0
+    LEFT_IDX = 89
+    BACK_IDX = 179
+    RIGHT_IDX = 269
+
+    def __init__(self):
+        super().__init__('laser_node')
+        self.declare_parameter('scan_topic', 'scan')
+
+        self._latest_scan = None
+        self.subscription_ = self.create_subscription(
+            LaserScan,
+            "/scan",
+            self.scan_callback,
+            10
+        )
+        self._print_timer = self.create_timer(0.5, self.print_distances)
+        self.get_logger().info(f'Subscribing to /scan')
+
+    def scan_callback(self, msg):
+        """Store latest laser scan for periodic printing."""
+        self._latest_scan = msg
+
+
+    def print_distances(self):
+        """Print front, left, back, right distances every 0.5s."""
+
+        # self.get_logger().info('Subscribing to /scan')
+        # self.get_logger().info(self._latest_scan)
+        r = self._latest_scan.ranges
+        self.get_logger().info(
+            f'Front: {r[self.FRONT_IDX]}, Left: {r[self.LEFT_IDX]}, '
+            f'Back: {r[self.BACK_IDX]}, Right: {r[self.RIGHT_IDX]}'
+        )
+
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = LaserNode()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+
+
+---------------------------------------
+=============================================================================
