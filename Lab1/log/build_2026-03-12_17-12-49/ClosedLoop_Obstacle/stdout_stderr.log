@@ -1,0 +1,35 @@
+running egg_info
+creating ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info
+writing ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/PKG-INFO
+writing dependency_links to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/dependency_links.txt
+writing entry points to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/entry_points.txt
+writing requirements to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/requires.txt
+writing top-level names to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/top_level.txt
+writing manifest file '../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/SOURCES.txt'
+reading manifest file '../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/SOURCES.txt'
+writing manifest file '../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build
+creating /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build/lib
+creating /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build/lib/ClosedLoop_Obstacle
+copying ClosedLoop_Obstacle/ClosedLoop_Obstacle.py -> /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build/lib/ClosedLoop_Obstacle
+copying ClosedLoop_Obstacle/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build/lib/ClosedLoop_Obstacle
+running install
+running install_lib
+creating /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle
+copying /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build/lib/ClosedLoop_Obstacle/ClosedLoop_Obstacle.py -> /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle
+copying /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build/lib/ClosedLoop_Obstacle/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle
+byte-compiling /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle/ClosedLoop_Obstacle.py to ClosedLoop_Obstacle.cpython-38.pyc
+byte-compiling /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ament_index
+creating /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ament_index/resource_index
+creating /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ament_index/resource_index/packages
+copying resource/ClosedLoop_Obstacle -> /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ament_index/resource_index/packages
+copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle
+running install_egg_info
+Copying ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info to /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle-0.0.0-py3.8.egg-info
+running install_scripts
+Installing ClosedLoop script to /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/ClosedLoop_Obstacle
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/install.log'

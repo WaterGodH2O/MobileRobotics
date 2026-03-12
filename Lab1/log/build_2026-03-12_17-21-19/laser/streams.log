@@ -1,0 +1,21 @@
+[2.825s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/laser/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/laser build --build-base /home/dcs/Desktop/Lab/Lab1/build/laser/build install --record /home/dcs/Desktop/Lab/Lab1/build/laser/install.log --install-scripts $base/lib/laser --single-version-externally-managed
+[3.231s] running egg_info
+[3.231s] writing ../../../build/laser/laser.egg-info/PKG-INFO
+[3.235s] writing dependency_links to ../../../build/laser/laser.egg-info/dependency_links.txt
+[3.235s] writing entry points to ../../../build/laser/laser.egg-info/entry_points.txt
+[3.235s] writing requirements to ../../../build/laser/laser.egg-info/requires.txt
+[3.235s] writing top-level names to ../../../build/laser/laser.egg-info/top_level.txt
+[3.274s] reading manifest file '../../../build/laser/laser.egg-info/SOURCES.txt'
+[3.275s] writing manifest file '../../../build/laser/laser.egg-info/SOURCES.txt'
+[3.275s] running build
+[3.275s] running build_py
+[3.275s] running install
+[3.275s] running install_lib
+[3.275s] running install_data
+[3.275s] running install_egg_info
+[3.276s] removing '/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser-0.0.0-py3.8.egg-info' (and everything under it)
+[3.276s] Copying ../../../build/laser/laser.egg-info to /home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages/laser-0.0.0-py3.8.egg-info
+[3.277s] running install_scripts
+[3.300s] Installing laser_node script to /home/dcs/Desktop/Lab/Lab1/install/laser/lib/laser
+[3.300s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/laser/install.log'
+[4.211s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/laser/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/laser build --build-base /home/dcs/Desktop/Lab/Lab1/build/laser/build install --record /home/dcs/Desktop/Lab/Lab1/build/laser/install.log --install-scripts $base/lib/laser --single-version-externally-managed

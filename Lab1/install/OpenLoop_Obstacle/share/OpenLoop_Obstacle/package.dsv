@@ -1,0 +1,6 @@
+source;share/OpenLoop_Obstacle/hook/pythonpath.ps1
+source;share/OpenLoop_Obstacle/hook/pythonpath.dsv
+source;share/OpenLoop_Obstacle/hook/pythonpath.sh
+source;share/OpenLoop_Obstacle/hook/ament_prefix_path.ps1
+source;share/OpenLoop_Obstacle/hook/ament_prefix_path.dsv
+source;share/OpenLoop_Obstacle/hook/ament_prefix_path.sh

@@ -44,18 +44,6 @@ class LaserNode(Node):
         """Store latest laser scan for periodic printing."""
         self._latest_scan = msg
 
-    def _safe_range(self, ranges, index):
-        """Return range at index or None if invalid."""
-        if index >= len(ranges):
-            return None
-        v = ranges[index]
-        if v != v or v == float('inf'):  # nan or inf
-            return None
-        return v
-
-    def _fmt(self, val):
-        """Format distance for display; use N/A if invalid."""
-        return f'{val:.2f}m' if val is not None else 'N/A'
 
     def print_distances(self):
         """Print front, left, back, right distances every 0.5s."""
@@ -68,19 +56,6 @@ class LaserNode(Node):
             f'Back: {r[self.BACK_IDX]}, Right: {r[self.RIGHT_IDX]}'
         )
 
-
-
-        # if self._latest_scan is None:
-        #     return
-        # r = self._latest_scan.ranges
-        # front = self._safe_range(r, self.FRONT_IDX)
-        # left = self._safe_range(r, self.LEFT_IDX)
-        # back = self._safe_range(r, self.BACK_IDX)
-        # right = self._safe_range(r, self.RIGHT_IDX)
-        # self.get_logger().info(
-        #     f'Front: {self._fmt(front)}, Left: {self._fmt(left)}, '
-        #     f'Back: {self._fmt(back)}, Right: {self._fmt(right)}'
-        # )
 
 
 def main(args=None):

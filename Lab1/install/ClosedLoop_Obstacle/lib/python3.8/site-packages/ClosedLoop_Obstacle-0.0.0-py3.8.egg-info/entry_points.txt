@@ -1,0 +1,3 @@
+[console_scripts]
+ClosedLoop = ClosedLoop_Obstacle.ClosedLoop_Obstacle:main
+

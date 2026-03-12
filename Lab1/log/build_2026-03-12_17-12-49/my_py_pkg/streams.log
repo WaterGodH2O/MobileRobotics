@@ -1,0 +1,20 @@
+[2.843s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_py_pkg build --build-base /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build install --record /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed
+[3.157s] running egg_info
+[3.157s] writing ../../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[3.157s] writing dependency_links to ../../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[3.157s] writing entry points to ../../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[3.157s] writing requirements to ../../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[3.157s] writing top-level names to ../../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[3.196s] reading manifest file '../../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[3.197s] writing manifest file '../../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[3.202s] running build
+[3.202s] running build_py
+[3.202s] running install
+[3.202s] running install_lib
+[3.202s] running install_data
+[3.203s] running install_egg_info
+[3.205s] removing '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[3.205s] Copying ../../../build/my_py_pkg/my_py_pkg.egg-info to /home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages/my_py_pkg-0.0.0-py3.8.egg-info
+[3.207s] running install_scripts
+[3.242s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/install.log'
+[3.287s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_py_pkg build --build-base /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build install --record /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed
