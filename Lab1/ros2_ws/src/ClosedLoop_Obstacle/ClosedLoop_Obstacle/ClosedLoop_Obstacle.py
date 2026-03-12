@@ -27,6 +27,7 @@ def main(args=None):
             twist.linear.x = float(LINEAR_SPEED)
             twist.angular.z = 0.0
         cmd_vel_pub.publish(twist)
+        node.get_logger().info('published')
 
     node.create_subscription(LaserScan, '/scan', scan_callback, 10)
     node.get_logger().info('Open-loop front obstacle avoidance: subscribing to /scan, publishing to cmd_vel')
