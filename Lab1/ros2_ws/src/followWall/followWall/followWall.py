@@ -1,5 +1,9 @@
 import rclpy
 from rclpy.node import Node
+from collections import deque
+from sensor_msgs.msg import LaserScan
+from geometry_msgs.msg import Twist
+
 
 # --- Closed-loop: P control to stop smoothly at target distance (scan only, no odom) ---
 TARGET_DISTANCE = 0.5        # (m) stop at this distance from obstacle
