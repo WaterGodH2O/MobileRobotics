@@ -93,7 +93,7 @@ def main(args=None):
     
 
     # node = Node('follow_wall_node')
-    node.get_logger().info('Test 文本')
+    print("Test 文本")
 
 
 if __name__ == '__main__':
