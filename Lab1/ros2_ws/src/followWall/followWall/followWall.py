@@ -87,7 +87,7 @@ def main(args=None):
     
 
     node = Node('follow_wall_node')
-    cmd_vel_pub = node.creat6e_publisher(Twist, 'cmd_vel', 10)
+
 
 if __name__ == '__main__':
     main()
