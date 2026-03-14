@@ -578,4 +578,12 @@ In closedloop version, the velocity of bot is depend on how far the bot from obs
 the reading from laser directly, a dique is used in this version to keep 5 most recent reading, then take the median
 from these 5 reading to aviod the affect of outlier. 
 
+
+- Clear discussion on possible ways of dealing with non-zero velocity of the obstacles
+For moving obstacles, the robot should not simply set its velocity to zero when the separation distance becomes small. 
+Instead, it should continuously adjust its speed according to the measured distance to the obstacle: 
+slowing down when the gap is decreasing and speeding up when the gap increases, 
+provided that a safe distance is preserved. With sufficiently frequent sensor updates, 
+this feedback-based strategy allows the robot to converge toward the obstacle’s velocity 
+and effectively follow it rather than stopping completely.
 =====================================================================
