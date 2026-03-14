@@ -28,7 +28,7 @@ def init_to_wall(args=None):
     rclpy.init(args=args)
     node = Node('follow_wall_node')
 
-    cmd_vel_pub = node.creat6e_publisher(Twist, 'cmd_vel', 10)
+    cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
     front_buffer: deque = deque(maxlen=FILTER_SIZE)
     exit_requested = [False]  # mutable so callback can set it
     shutdown_timer_created = [False]
