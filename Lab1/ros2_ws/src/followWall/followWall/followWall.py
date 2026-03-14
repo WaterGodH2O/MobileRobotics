@@ -53,7 +53,7 @@ def init_to_wall(args=None):
 
                 def do_shutdown():
                     node.get_logger().info('Target distance reached (%.2f m), exiting.' % TARGET_DISTANCE)
-                    node.destroy_node()
+                    # Only signal shutdown here; finally block will destroy_node()
                     rclpy.shutdown()
 
                 if not shutdown_timer_created[0]:
@@ -87,6 +87,7 @@ def main(args=None):
     
 
     # node = Node('follow_wall_node')
+    node.get_logger().info('Test 文本')
 
 
 if __name__ == '__main__':
