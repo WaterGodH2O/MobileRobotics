@@ -1,3 +1,5 @@
+import threading
+import time
 import rclpy
 from rclpy.node import Node
 from collections import deque
@@ -52,9 +54,12 @@ def init_to_wall(args=None):
                 exit_requested[0] = True
 
                 def do_shutdown():
-                    node.get_logger().info('Target distance reached (%.2f m), exiting.' % TARGET_DISTANCE)
-                    # Only signal shutdown here; finally block will destroy_node()
-                    rclpy.shutdown()
+                    node.get_logger().info('Target distance reached (%.2f m), exiting--.' % TARGET_DISTANCE)
+                    # Shutdown from another thread so spin() can return (callback thread may not wake spin)
+                    def shutdown_from_thread():
+                        time.sleep(0.1)
+                        rclpy.shutdown()
+                    threading.Thread(target=shutdown_from_thread, daemon=True).start()
 
                 if not shutdown_timer_created[0]:
                     shutdown_timer_created[0] = True
