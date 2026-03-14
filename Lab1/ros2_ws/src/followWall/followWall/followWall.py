@@ -86,7 +86,7 @@ def main(args=None):
     init_to_wall(args)
     
 
-    node = Node('follow_wall_node')
+    # node = Node('follow_wall_node')
 
 
 if __name__ == '__main__':
