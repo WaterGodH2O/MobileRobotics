@@ -26,10 +26,12 @@ def median_filter(buf: deque) -> float:
 
 def init_to_wall(args=None):
     rclpy.init(args=args)
-    node = Node('closed_loop_obstacle_node')
+    node = Node('follow_wall_node')
 
-    cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
+    cmd_vel_pub = node.creat6e_publisher(Twist, 'cmd_vel', 10)
     front_buffer: deque = deque(maxlen=FILTER_SIZE)
+    exit_requested = [False]  # mutable so callback can set it
+    shutdown_timer_created = [False]
 
     def scan_callback(msg: LaserScan):
         # Raw front distance
@@ -44,6 +46,20 @@ def init_to_wall(args=None):
         error = filtered_front - TARGET_DISTANCE
         if error <= 0.0:
             twist.linear.x = 0.0
+            cmd_vel_pub.publish(twist)
+            # Exit: stop and shut down node once target distance is reached
+            if not exit_requested[0]:
+                exit_requested[0] = True
+
+                def do_shutdown():
+                    node.get_logger().info('Target distance reached (%.2f m), exiting.' % TARGET_DISTANCE)
+                    node.destroy_node()
+                    rclpy.shutdown()
+
+                if not shutdown_timer_created[0]:
+                    shutdown_timer_created[0] = True
+                    node.create_timer(0.5, do_shutdown)  # one-shot delay then exit
+            return
         else:
             twist.linear.x = min(KP * error, MAX_LINEAR_SPEED)
             twist.linear.x = max(0.0, twist.linear.x)
@@ -69,6 +85,9 @@ def init_to_wall(args=None):
 def main(args=None):
     init_to_wall(args)
     
+
+    node = Node('follow_wall_node')
+    cmd_vel_pub = node.creat6e_publisher(Twist, 'cmd_vel', 10)
 
 if __name__ == '__main__':
     main()
