@@ -18,8 +18,8 @@ FRONT_IDX = 0
 # --- 贴墙行走：目标离墙间距（左测距）---
 TARGET_WALL_DISTANCE = 0.5   # (m) 期望与左侧墙的距离
 WALL_FOLLOW_KP = 0.8        # 左距偏差 -> 角速度 增益
-WALL_FOLLOW_LINEAR = 0.2    # (m/s) 贴墙时前进速度
-MAX_ANGULAR = 0.5           # (rad/s) 角速度上限
+WALL_FOLLOW_LINEAR = 0.08    # (m/s) 贴墙时前进速度
+MAX_ANGULAR = 2.0           # (rad/s) 角速度上限
 
 
 
