@@ -204,12 +204,10 @@ def follow_wall(args=None):
         cmd_vel_pub.publish(twist)
 
         ranges = msg.ranges
-        d_front = float(ranges[0])
-        d_left = float(ranges[89])
-        d_back = float(ranges[179])
+
         d_right = right
         node.get_logger().info(
-            'Four directions (m):  right=%.3f' % (d_front, d_left, d_back, d_right)
+            'Four directions (m):  right=%.3f' % (d_right)
         )
 
     def timer_callback():
