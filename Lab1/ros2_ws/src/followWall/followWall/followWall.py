@@ -107,8 +107,8 @@ def init_to_wall(args=None):
 
 
 # --- 转向并打印四向距离 ---
-TURN_ANGULAR_SPEED = 0.5   # rad/s，左转为正
-TURN_ANGLE_LEFT = math.pi / 2   # 左转 90° 与墙平行
+TURN_ANGULAR_SPEED = 0.5   # rad/s
+TURN_ANGLE_LEFT = math.pi / 2   # 
 
 
 def turn_parallel_and_print_distances(args=None):
@@ -139,22 +139,26 @@ def turn_parallel_and_print_distances(args=None):
     time.sleep(0.3)
 
 
-    # Front: 0, Left: 89, Back: 179, Right: 269 — 循环内每次 spin_once 取最新 scan 再打印
-    while rclpy.ok():
-        rclpy.spin_once(node, timeout_sec=0.1)
-        msg = scan_msg_holder[0]
-        if msg is None:
-            continue
-        ranges = msg.ranges
-        d_front = float(ranges[0])
-        d_left = float(ranges[89])
-        d_back = float(ranges[179])
-        d_right = float(ranges[269])
-        node.get_logger().info(
-            'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
-        )
-        print('Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right))
-        time.sleep(1)
+    # # Front: 0, Left: 89, Back: 179, Right: 269 — 循环内每次 spin_once 取最新 scan 再打印
+    # while rclpy.ok():
+    #     rclpy.spin_once(node, timeout_sec=0.1)
+    #     msg = scan_msg_holder[0]
+    #     if msg is None:
+    #         continue
+    #     ranges = msg.ranges
+    #     d_front = float(ranges[0])
+    #     d_left = float(ranges[89])
+    #     d_back = float(ranges[179])
+    #     d_right = float(ranges[269])
+    #     node.get_logger().info(
+    #         'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
+    #     )
+    #     print('Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right))
+    #     time.sleep(1)
+
+    node.destroy_node()
+    if rclpy.ok():
+        rclpy.shutdown()
 
 
 def follow_wall(args=None):
@@ -167,9 +171,9 @@ def follow_wall(args=None):
     def scan_callback(msg: LaserScan):
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
-        left = float(msg.ranges[89])
-        if left != float('inf') and left == left:  # 有效
-            error = left - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
+        right = float(msg.ranges[269])
+        if right != float('inf') and right == right:  # 有效
+            error = right - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
             angular = WALL_FOLLOW_KP * error
             angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
             twist.angular.z = angular
@@ -177,6 +181,15 @@ def follow_wall(args=None):
             twist.angular.z = 0.0
         last_twist[0] = twist
         cmd_vel_pub.publish(twist)
+
+        ranges = msg.ranges
+        d_front = float(ranges[0])
+        d_left = float(ranges[89])
+        d_back = float(ranges[179])
+        d_right = float(ranges[269])
+        node.get_logger().info(
+            'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
+        )
 
     def timer_callback():
         cmd_vel_pub.publish(last_twist[0])
