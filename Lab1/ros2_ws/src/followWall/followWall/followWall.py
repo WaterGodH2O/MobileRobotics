@@ -9,7 +9,7 @@ from geometry_msgs.msg import Twist
 
 
 # --- Closed-loop: P control to stop smoothly at target distance (scan only, no odom) ---
-TARGET_DISTANCE = 0.5        # (m) stop at this distance from obstacle
+TARGET_DISTANCE = 0.3        # (m) stop at this distance from obstacle
 KP = 0.4                     # P gain: adjust for smooth, neither sluggish nor jerky
 MAX_LINEAR_SPEED = 0.6       # (m/s) cap forward speed
 FILTER_SIZE = 5              # number of recent scans for median filter (reject bad readings)
@@ -120,7 +120,6 @@ TURN_ANGLE_LEFT = math.pi / 2   #
 
 def turn_parallel_and_print_distances(args=None):
     """init_to_wall 之后：左转 90° 与墙平行，然后打印前/左/后/右四向距离。"""
-
     rclpy.init(args=args)
     node = Node('follow_wall_node')
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
@@ -143,13 +142,8 @@ def turn_parallel_and_print_distances(args=None):
         rclpy.spin_once(node, timeout_sec=0.02)
         time.sleep(0.02)
     # 停止转动
-
-
     cmd_vel_pub.publish(Twist())
     time.sleep(0.3)
-
-    rclpy.spin_once(node, timeout_sec=0.02)
-
 
 
     # # Front: 0, Left: 89, Back: 179, Right: 269 — 循环内每次 spin_once 取最新 scan 再打印
@@ -200,15 +194,12 @@ def follow_wall(args=None):
     node = Node('follow_wall_node')
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
     last_twist = [Twist()]
+    state_start = [None]  # 首次 scan 前为 None，避免未定义引用
 
     right_front_buf: deque = deque(maxlen=FILTER_SIZE)
     right_back_buf: deque = deque(maxlen=FILTER_SIZE)
 
     def scan_callback(msg: LaserScan):
-        now = time.time()
-        if state_start[0] is None:
-            state_start[0] = now
-
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
 
