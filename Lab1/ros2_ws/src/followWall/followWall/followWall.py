@@ -20,8 +20,8 @@ TARGET_WALL_DISTANCE = 0.3   # (m) 期望与左侧墙的距离
 WALL_FOLLOW_KP = 3.0        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.02    # (m/s) 贴墙时前进速度
 MAX_ANGULAR = 1.0           # (rad/s) 角速度上限
-
-
+SEGMENT_IDX = 249
+SEGMENT_END_IDX = 289
 
 
 def median_filter(buf: deque) -> float:
@@ -143,7 +143,10 @@ def turn_parallel_and_print_distances(args=None):
     time.sleep(0.3)
 
     rclpy.spin_once(node, timeout_sec=0.02)
-    right = scan_msg_holder[0].ranges[269]
+    segment = [float(msg.ranges[i]) for i in range(SEGMENT_IDX, SEGMENT_END_IDX) if i < len(msg.ranges)]
+    valid = [r for r in segment if r == r and r != float('inf')]
+    right = min(valid) if valid else float('inf')
+
     TARGET_WALL_DISTANCE = right
     node.get_logger().info('Target wall distance set to: %.3f m' % TARGET_WALL_DISTANCE)
 
@@ -191,7 +194,7 @@ def follow_wall(args=None):
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
         # right = 190~350 范围内有效测距的最小值
-        segment = [float(msg.ranges[i]) for i in range(249, 289) if i < len(msg.ranges)]
+        segment = [float(msg.ranges[i]) for i in range(SEGMENT_IDX, SEGMENT_END_IDX) if i < len(msg.ranges)]
         valid = [r for r in segment if r == r and r != float('inf')]
         right = min(valid) if valid else float('inf')
 
