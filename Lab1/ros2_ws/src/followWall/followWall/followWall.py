@@ -21,7 +21,7 @@ WALL_FOLLOW_KP = 3.0        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.02    # (m/s) 贴墙时前进速度
 MAX_ANGULAR = 1.0           # (rad/s) 角速度上限
 # 过近时“转开→前进→转回”序列，避免边转边测导致激光角度变化
-TURN_AWAY_ANGULAR = 0.5     # (rad/s) 检测过近后转开角速度（左转远离墙）
+TURN_AWAY_ANGULAR = 0.3     # (rad/s) 检测过近后转开角速度（左转远离墙）
 TURN_AWAY_DURATION = 0.15    # (s) 转开持续时间
 DRIVE_FORWARD_DURATION = 0.2  # (s) 转开后直线前进时间
 TURN_BACK_DURATION = 0.15    # (s) 转回持续时间
@@ -119,7 +119,6 @@ TURN_ANGLE_LEFT = math.pi / 2   #
 def turn_parallel_and_print_distances(args=None):
     """init_to_wall 之后：左转 90° 与墙平行，然后打印前/左/后/右四向距离。"""
 
-    global TARGET_WALL_DISTANCE
     rclpy.init(args=args)
     node = Node('follow_wall_node')
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
@@ -151,9 +150,6 @@ def turn_parallel_and_print_distances(args=None):
     segment = [float(msg.ranges[i]) for i in range(SEGMENT_IDX, SEGMENT_END_IDX) if i < len(msg.ranges)]
     valid = [r for r in segment if r == r and r != float('inf')]
     right = min(valid) if valid else float('inf')
-
-    TARGET_WALL_DISTANCE = right
-    node.get_logger().info('Target wall distance set to: %.3f m' % TARGET_WALL_DISTANCE)
 
 
     # # Front: 0, Left: 89, Back: 179, Right: 269 — 循环内每次 spin_once 取最新 scan 再打印
