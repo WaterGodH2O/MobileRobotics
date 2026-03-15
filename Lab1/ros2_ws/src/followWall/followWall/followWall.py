@@ -140,7 +140,7 @@ def turn_parallel_and_print_distances(args=None):
 
     # 等待至少一帧 scan
     while rclpy.ok() and scan_msg_holder[0] is None:
-        rclpy.spin_once(node, timeout_sec=0.1)
+        rclpy.spin_once(node, timeout_sec=1.5)
     msg = scan_msg_holder[0]
     if msg is None:
         node.get_logger().warn('No scan received, skipping distance print.')
@@ -209,7 +209,7 @@ def follow_wall(args=None):
 def main(args=None):
     init_to_wall(args)
     turn_parallel_and_print_distances(args)
-    follow_wall(args)
+    # follow_wall(args)
 
 
 if __name__ == '__main__':
