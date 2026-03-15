@@ -1,0 +1,21 @@
+[1.729s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/followWall': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/followWall/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/followWall build --build-base /home/dcs/Desktop/Lab/Lab1/build/followWall/build install --record /home/dcs/Desktop/Lab/Lab1/build/followWall/install.log --install-scripts $base/lib/followWall --single-version-externally-managed
+[2.032s] running egg_info
+[2.033s] writing ../../../build/followWall/followWall.egg-info/PKG-INFO
+[2.034s] writing dependency_links to ../../../build/followWall/followWall.egg-info/dependency_links.txt
+[2.034s] writing entry points to ../../../build/followWall/followWall.egg-info/entry_points.txt
+[2.034s] writing requirements to ../../../build/followWall/followWall.egg-info/requires.txt
+[2.034s] writing top-level names to ../../../build/followWall/followWall.egg-info/top_level.txt
+[2.056s] reading manifest file '../../../build/followWall/followWall.egg-info/SOURCES.txt'
+[2.057s] writing manifest file '../../../build/followWall/followWall.egg-info/SOURCES.txt'
+[2.058s] running build
+[2.058s] running build_py
+[2.061s] running install
+[2.062s] running install_lib
+[2.067s] running install_data
+[2.068s] running install_egg_info
+[2.069s] removing '/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall-0.0.0-py3.8.egg-info' (and everything under it)
+[2.069s] Copying ../../../build/followWall/followWall.egg-info to /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall-0.0.0-py3.8.egg-info
+[2.071s] running install_scripts
+[2.090s] Installing follow_wall script to /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/followWall
+[2.093s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/followWall/install.log'
+[2.482s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/followWall' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/followWall/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/followWall build --build-base /home/dcs/Desktop/Lab/Lab1/build/followWall/build install --record /home/dcs/Desktop/Lab/Lab1/build/followWall/install.log --install-scripts $base/lib/followWall --single-version-externally-managed

@@ -1,0 +1,20 @@
+[1.915s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/OpenLoop_Obstacle': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/OpenLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/install.log --install-scripts $base/lib/OpenLoop_Obstacle --single-version-externally-managed
+[2.174s] running egg_info
+[2.174s] writing ../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info/PKG-INFO
+[2.175s] writing dependency_links to ../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info/dependency_links.txt
+[2.175s] writing entry points to ../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info/entry_points.txt
+[2.175s] writing requirements to ../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info/requires.txt
+[2.175s] writing top-level names to ../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info/top_level.txt
+[2.204s] reading manifest file '../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info/SOURCES.txt'
+[2.204s] writing manifest file '../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info/SOURCES.txt'
+[2.205s] running build
+[2.205s] running build_py
+[2.205s] running install
+[2.205s] running install_lib
+[2.206s] running install_data
+[2.207s] running install_egg_info
+[2.208s] removing '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/python3.8/site-packages/OpenLoop_Obstacle-0.0.0-py3.8.egg-info' (and everything under it)
+[2.208s] Copying ../../../build/OpenLoop_Obstacle/OpenLoop_Obstacle.egg-info to /home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/python3.8/site-packages/OpenLoop_Obstacle-0.0.0-py3.8.egg-info
+[2.210s] running install_scripts
+[2.229s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/install.log'
+[2.705s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/OpenLoop_Obstacle' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/OpenLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/install.log --install-scripts $base/lib/OpenLoop_Obstacle --single-version-externally-managed

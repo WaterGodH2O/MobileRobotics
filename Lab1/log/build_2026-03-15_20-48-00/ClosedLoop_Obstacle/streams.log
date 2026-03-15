@@ -1,0 +1,21 @@
+[2.026s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/ClosedLoop_Obstacle': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ClosedLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/install.log --install-scripts $base/lib/ClosedLoop_Obstacle --single-version-externally-managed
+[2.278s] running egg_info
+[2.278s] writing ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/PKG-INFO
+[2.281s] writing dependency_links to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/dependency_links.txt
+[2.281s] writing entry points to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/entry_points.txt
+[2.281s] writing requirements to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/requires.txt
+[2.281s] writing top-level names to ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/top_level.txt
+[2.306s] reading manifest file '../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/SOURCES.txt'
+[2.307s] writing manifest file '../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info/SOURCES.txt'
+[2.307s] running build
+[2.307s] running build_py
+[2.307s] running install
+[2.307s] running install_lib
+[2.309s] running install_data
+[2.309s] running install_egg_info
+[2.310s] removing '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle-0.0.0-py3.8.egg-info' (and everything under it)
+[2.310s] Copying ../../../build/ClosedLoop_Obstacle/ClosedLoop_Obstacle.egg-info to /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages/ClosedLoop_Obstacle-0.0.0-py3.8.egg-info
+[2.311s] running install_scripts
+[2.324s] Installing ClosedLoop script to /home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/ClosedLoop_Obstacle
+[2.324s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/install.log'
+[2.850s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/ClosedLoop_Obstacle' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ClosedLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/install.log --install-scripts $base/lib/ClosedLoop_Obstacle --single-version-externally-managed

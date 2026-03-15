@@ -1,0 +1,20 @@
+[1.757s] Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/controller/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/controller build --build-base /home/dcs/Desktop/Lab/Lab1/build/controller/build install --record /home/dcs/Desktop/Lab/Lab1/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed
+[2.028s] running egg_info
+[2.029s] writing ../../../build/controller/controller.egg-info/PKG-INFO
+[2.030s] writing dependency_links to ../../../build/controller/controller.egg-info/dependency_links.txt
+[2.030s] writing entry points to ../../../build/controller/controller.egg-info/entry_points.txt
+[2.030s] writing requirements to ../../../build/controller/controller.egg-info/requires.txt
+[2.031s] writing top-level names to ../../../build/controller/controller.egg-info/top_level.txt
+[2.059s] reading manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'
+[2.059s] writing manifest file '../../../build/controller/controller.egg-info/SOURCES.txt'
+[2.059s] running build
+[2.060s] running build_py
+[2.060s] running install
+[2.062s] running install_lib
+[2.063s] running install_data
+[2.063s] running install_egg_info
+[2.065s] removing '/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller-0.0.0-py3.8.egg-info' (and everything under it)
+[2.065s] Copying ../../../build/controller/controller.egg-info to /home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages/controller-0.0.0-py3.8.egg-info
+[2.066s] running install_scripts
+[2.086s] writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/controller/install.log'
+[2.570s] Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/controller/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/controller build --build-base /home/dcs/Desktop/Lab/Lab1/build/controller/build install --record /home/dcs/Desktop/Lab/Lab1/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed

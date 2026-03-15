@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../../build/followWall/followWall.egg-info/PKG-INFO
+../../../build/followWall/followWall.egg-info/SOURCES.txt
+../../../build/followWall/followWall.egg-info/dependency_links.txt
+../../../build/followWall/followWall.egg-info/entry_points.txt
+../../../build/followWall/followWall.egg-info/requires.txt
+../../../build/followWall/followWall.egg-info/top_level.txt
+../../../build/followWall/followWall.egg-info/zip-safe
+followWall/__init__.py
+followWall/followWall.py
+resource/followWall
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

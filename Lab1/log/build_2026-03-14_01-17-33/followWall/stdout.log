@@ -1,0 +1,32 @@
+running egg_info
+creating ../../../build/followWall/followWall.egg-info
+writing ../../../build/followWall/followWall.egg-info/PKG-INFO
+writing dependency_links to ../../../build/followWall/followWall.egg-info/dependency_links.txt
+writing entry points to ../../../build/followWall/followWall.egg-info/entry_points.txt
+writing requirements to ../../../build/followWall/followWall.egg-info/requires.txt
+writing top-level names to ../../../build/followWall/followWall.egg-info/top_level.txt
+writing manifest file '../../../build/followWall/followWall.egg-info/SOURCES.txt'
+reading manifest file '../../../build/followWall/followWall.egg-info/SOURCES.txt'
+writing manifest file '../../../build/followWall/followWall.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dcs/Desktop/Lab/Lab1/build/followWall/build
+creating /home/dcs/Desktop/Lab/Lab1/build/followWall/build/lib
+creating /home/dcs/Desktop/Lab/Lab1/build/followWall/build/lib/followWall
+copying followWall/followWall.py -> /home/dcs/Desktop/Lab/Lab1/build/followWall/build/lib/followWall
+running install
+running install_lib
+creating /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall
+copying /home/dcs/Desktop/Lab/Lab1/build/followWall/build/lib/followWall/followWall.py -> /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall
+byte-compiling /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall/followWall.py to followWall.cpython-38.pyc
+running install_data
+creating /home/dcs/Desktop/Lab/Lab1/install/followWall/share/ament_index
+creating /home/dcs/Desktop/Lab/Lab1/install/followWall/share/ament_index/resource_index
+creating /home/dcs/Desktop/Lab/Lab1/install/followWall/share/ament_index/resource_index/packages
+copying resource/followWall -> /home/dcs/Desktop/Lab/Lab1/install/followWall/share/ament_index/resource_index/packages
+copying package.xml -> /home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall
+running install_egg_info
+Copying ../../../build/followWall/followWall.egg-info to /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall-0.0.0-py3.8.egg-info
+running install_scripts
+Installing follow_wall script to /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/followWall
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/followWall/install.log'

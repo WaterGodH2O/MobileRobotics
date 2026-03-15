@@ -1,0 +1,742 @@
+[1.283s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.283s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f3cf885b850>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f3cf885b850>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f3cf885b400>)
+[1.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.346s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dcs/Desktop/Lab/Lab1'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extensions ['ignore', 'ignore_ament_install']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'ignore'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'ignore_ament_install'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extensions ['colcon_pkg']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'colcon_pkg'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extensions ['colcon_meta']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'colcon_meta'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extensions ['ros']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'ros'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extensions ['cmake', 'python']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'cmake'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'python'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extensions ['python_setup_py']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(report) by extension 'python_setup_py'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extensions ['ignore', 'ignore_ament_install']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'ignore'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'ignore_ament_install'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extensions ['colcon_pkg']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'colcon_pkg'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extensions ['colcon_meta']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'colcon_meta'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extensions ['ros']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'ros'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extensions ['cmake', 'python']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'cmake'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'python'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extensions ['python_setup_py']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch) by extension 'python_setup_py'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'ignore'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'ignore_ament_install'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extensions ['colcon_pkg']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'colcon_pkg'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extensions ['colcon_meta']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'colcon_meta'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extensions ['ros']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'ros'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extensions ['cmake', 'python']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'cmake'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'python'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extensions ['python_setup_py']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/launch/__pycache__) by extension 'python_setup_py'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extensions ['ignore', 'ignore_ament_install']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extension 'ignore'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extension 'ignore_ament_install'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extensions ['colcon_pkg']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extension 'colcon_pkg'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extensions ['colcon_meta']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extension 'colcon_meta'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extensions ['ros']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ClosedLoop_Obstacle) by extension 'ros'
+[1.359s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/ClosedLoop_Obstacle' with type 'ros.ament_python' and name 'ClosedLoop_Obstacle'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extensions ['ignore', 'ignore_ament_install']
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extension 'ignore'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extension 'ignore_ament_install'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extensions ['colcon_pkg']
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extension 'colcon_pkg'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extensions ['colcon_meta']
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extension 'colcon_meta'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extensions ['ros']
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/OpenLoop_Obstacle) by extension 'ros'
+[1.359s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/OpenLoop_Obstacle' with type 'ros.ament_python' and name 'OpenLoop_Obstacle'
+[1.359s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extensions ['ignore', 'ignore_ament_install']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extension 'ignore'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extension 'ignore_ament_install'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extensions ['colcon_pkg']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extension 'colcon_pkg'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extensions ['colcon_meta']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extension 'colcon_meta'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extensions ['ros']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/controller) by extension 'ros'
+[1.360s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/controller' with type 'ros.ament_python' and name 'controller'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extensions ['ignore', 'ignore_ament_install']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extension 'ignore'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extension 'ignore_ament_install'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extensions ['colcon_pkg']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extension 'colcon_pkg'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extensions ['colcon_meta']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extension 'colcon_meta'
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extensions ['ros']
+[1.360s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/followWall) by extension 'ros'
+[1.361s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/followWall' with type 'ros.ament_python' and name 'followWall'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extensions ['ignore', 'ignore_ament_install']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extension 'ignore'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extension 'ignore_ament_install'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extensions ['colcon_pkg']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extension 'colcon_pkg'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extensions ['colcon_meta']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extension 'colcon_meta'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extensions ['ros']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/laser) by extension 'ros'
+[1.361s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/laser' with type 'ros.ament_python' and name 'laser'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extensions ['ignore', 'ignore_ament_install']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extension 'ignore'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extension 'ignore_ament_install'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extensions ['colcon_pkg']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extension 'colcon_pkg'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extensions ['colcon_meta']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extension 'colcon_meta'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extensions ['ros']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_square) by extension 'ros'
+[1.362s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/move_square' with type 'ros.ament_python' and name 'move_square'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extension 'ignore'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extension 'ignore_ament_install'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extensions ['colcon_pkg']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extension 'colcon_pkg'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extensions ['colcon_meta']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extension 'colcon_meta'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extensions ['ros']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/move_turtlebot3) by extension 'ros'
+[1.362s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/move_turtlebot3' with type 'ros.ament_python' and name 'move_turtlebot3'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extension 'ignore'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extension 'ignore_ament_install'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extensions ['colcon_pkg']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extension 'colcon_pkg'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extensions ['colcon_meta']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extension 'colcon_meta'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extensions ['ros']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/my_py_pkg) by extension 'ros'
+[1.363s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/my_py_pkg' with type 'ros.ament_python' and name 'my_py_pkg'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extensions ['ignore', 'ignore_ament_install']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extension 'ignore'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extension 'ignore_ament_install'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extensions ['colcon_pkg']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extension 'colcon_pkg'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extensions ['colcon_meta']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extension 'colcon_meta'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extensions ['ros']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/noise) by extension 'ros'
+[1.364s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/noise' with type 'ros.ament_python' and name 'noise'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extensions ['ignore', 'ignore_ament_install']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extension 'ignore'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extension 'ignore_ament_install'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extensions ['colcon_pkg']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extension 'colcon_pkg'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extensions ['colcon_meta']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extension 'colcon_meta'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extensions ['ros']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/package_name) by extension 'ros'
+[1.364s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/package_name' with type 'ros.ament_python' and name 'package_name'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extensions ['ignore', 'ignore_ament_install']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extension 'ignore'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extension 'ignore_ament_install'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extensions ['colcon_pkg']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extension 'colcon_pkg'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extensions ['colcon_meta']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extension 'colcon_meta'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extensions ['ros']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/r2) by extension 'ros'
+[1.365s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/r2' with type 'ros.ament_python' and name 'r2'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extension 'ignore'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extension 'ignore_ament_install'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extensions ['colcon_pkg']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extension 'colcon_pkg'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extensions ['colcon_meta']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extension 'colcon_meta'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extensions ['ros']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/turtlebot3) by extension 'ros'
+[1.365s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/turtlebot3' with type 'ros.ament_python' and name 'turtlebot3'
+[1.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.527s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/dcs/Desktop/Lab/Lab1/install
+[1.550s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 373 installed packages in /opt/ros/foxy
+[1.551s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'cmake_args' from command line to 'None'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'cmake_target' from command line to 'None'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'cmake_clean_cache' from command line to 'False'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'cmake_clean_first' from command line to 'False'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'cmake_force_configure' from command line to 'False'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'ament_cmake_args' from command line to 'None'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'catkin_cmake_args' from command line to 'None'
+[1.653s] Level 5:colcon.colcon_core.verb:set package 'ClosedLoop_Obstacle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.653s] DEBUG:colcon.colcon_core.verb:Building package 'ClosedLoop_Obstacle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/ClosedLoop_Obstacle', 'symlink_install': False, 'test_result_base': None}
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'cmake_args' from command line to 'None'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'cmake_target' from command line to 'None'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'cmake_clean_cache' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'cmake_clean_first' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'cmake_force_configure' from command line to 'False'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'ament_cmake_args' from command line to 'None'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'catkin_cmake_args' from command line to 'None'
+[1.674s] Level 5:colcon.colcon_core.verb:set package 'OpenLoop_Obstacle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.674s] DEBUG:colcon.colcon_core.verb:Building package 'OpenLoop_Obstacle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/OpenLoop_Obstacle', 'symlink_install': False, 'test_result_base': None}
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.695s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.695s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/controller', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller', 'symlink_install': False, 'test_result_base': None}
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'cmake_args' from command line to 'None'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'cmake_target' from command line to 'None'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'cmake_clean_cache' from command line to 'False'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'cmake_clean_first' from command line to 'False'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'cmake_force_configure' from command line to 'False'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'ament_cmake_args' from command line to 'None'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'catkin_cmake_args' from command line to 'None'
+[1.716s] Level 5:colcon.colcon_core.verb:set package 'followWall' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.716s] DEBUG:colcon.colcon_core.verb:Building package 'followWall' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/followWall', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/followWall', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/followWall', 'symlink_install': False, 'test_result_base': None}
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'cmake_args' from command line to 'None'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'cmake_target' from command line to 'None'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'cmake_clean_cache' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'cmake_clean_first' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'cmake_force_configure' from command line to 'False'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'ament_cmake_args' from command line to 'None'
+[1.736s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'catkin_cmake_args' from command line to 'None'
+[1.737s] Level 5:colcon.colcon_core.verb:set package 'laser' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.737s] DEBUG:colcon.colcon_core.verb:Building package 'laser' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/laser', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/laser', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser', 'symlink_install': False, 'test_result_base': None}
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'cmake_args' from command line to 'None'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'cmake_target' from command line to 'None'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'cmake_clean_cache' from command line to 'False'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'cmake_clean_first' from command line to 'False'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'cmake_force_configure' from command line to 'False'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'ament_cmake_args' from command line to 'None'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'catkin_cmake_args' from command line to 'None'
+[1.757s] Level 5:colcon.colcon_core.verb:set package 'move_square' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.757s] DEBUG:colcon.colcon_core.verb:Building package 'move_square' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/move_square', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/move_square', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square', 'symlink_install': False, 'test_result_base': None}
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'cmake_args' from command line to 'None'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'cmake_target' from command line to 'None'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'cmake_clean_cache' from command line to 'False'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'cmake_clean_first' from command line to 'False'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'cmake_force_configure' from command line to 'False'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'ament_cmake_args' from command line to 'None'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'catkin_cmake_args' from command line to 'None'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'move_turtlebot3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.778s] DEBUG:colcon.colcon_core.verb:Building package 'move_turtlebot3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3', 'symlink_install': False, 'test_result_base': None}
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_args' from command line to 'None'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target' from command line to 'None'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.799s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.799s] DEBUG:colcon.colcon_core.verb:Building package 'my_py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'cmake_args' from command line to 'None'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'cmake_target' from command line to 'None'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'cmake_clean_cache' from command line to 'False'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'cmake_clean_first' from command line to 'False'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'cmake_force_configure' from command line to 'False'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'ament_cmake_args' from command line to 'None'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'catkin_cmake_args' from command line to 'None'
+[1.820s] Level 5:colcon.colcon_core.verb:set package 'noise' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.820s] DEBUG:colcon.colcon_core.verb:Building package 'noise' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/noise', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/noise', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/noise', 'symlink_install': False, 'test_result_base': None}
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'cmake_args' from command line to 'None'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'cmake_target' from command line to 'None'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'cmake_clean_cache' from command line to 'False'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'cmake_clean_first' from command line to 'False'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'cmake_force_configure' from command line to 'False'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'ament_cmake_args' from command line to 'None'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'catkin_cmake_args' from command line to 'None'
+[1.841s] Level 5:colcon.colcon_core.verb:set package 'package_name' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.841s] DEBUG:colcon.colcon_core.verb:Building package 'package_name' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/package_name', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/package_name', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name', 'symlink_install': False, 'test_result_base': None}
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'cmake_args' from command line to 'None'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'cmake_target' from command line to 'None'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'cmake_clean_first' from command line to 'False'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'cmake_force_configure' from command line to 'False'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'ament_cmake_args' from command line to 'None'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.862s] Level 5:colcon.colcon_core.verb:set package 'r2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.862s] DEBUG:colcon.colcon_core.verb:Building package 'r2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/r2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/r2', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2', 'symlink_install': False, 'test_result_base': None}
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_args' from command line to 'None'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target' from command line to 'None'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_cache' from command line to 'False'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_first' from command line to 'False'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_force_configure' from command line to 'False'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'ament_cmake_args' from command line to 'None'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_cmake_args' from command line to 'None'
+[1.883s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.883s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dcs/Desktop/Lab/Lab1/build/turtlebot3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3', 'merge_install': False, 'path': '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3', 'symlink_install': False, 'test_result_base': None}
+[1.904s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.926s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.926s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/ClosedLoop_Obstacle' with build type 'ament_python'
+[1.926s] Level 1:colcon.colcon_core.shell:create_environment_hook('ClosedLoop_Obstacle', 'ament_prefix_path')
+[1.949s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/hook/ament_prefix_path.ps1'
+[1.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/hook/ament_prefix_path.dsv'
+[1.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/hook/ament_prefix_path.sh'
+[1.971s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.971s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.040s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/OpenLoop_Obstacle' with build type 'ament_python'
+[2.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('OpenLoop_Obstacle', 'ament_prefix_path')
+[2.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/hook/ament_prefix_path.ps1'
+[2.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/hook/ament_prefix_path.dsv'
+[2.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/hook/ament_prefix_path.sh'
+[2.088s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.088s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.157s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller' with build type 'ament_python'
+[2.157s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ament_prefix_path')
+[2.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/hook/ament_prefix_path.ps1'
+[2.180s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/hook/ament_prefix_path.dsv'
+[2.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/hook/ament_prefix_path.sh'
+[2.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.202s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.271s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/followWall' with build type 'ament_python'
+[2.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('followWall', 'ament_prefix_path')
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/hook/ament_prefix_path.ps1'
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/hook/ament_prefix_path.dsv'
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/hook/ament_prefix_path.sh'
+[2.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.552s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/ClosedLoop_Obstacle'
+[2.574s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.816s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/OpenLoop_Obstacle'
+[2.840s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.840s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.065s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller'
+[3.088s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.088s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.316s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/followWall'
+[3.340s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.340s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/controller/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/controller build --build-base /home/dcs/Desktop/Lab/Lab1/build/controller/build install --record /home/dcs/Desktop/Lab/Lab1/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed
+[3.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/ClosedLoop_Obstacle': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ClosedLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/install.log --install-scripts $base/lib/ClosedLoop_Obstacle --single-version-externally-managed
+[3.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/OpenLoop_Obstacle': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/OpenLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/install.log --install-scripts $base/lib/OpenLoop_Obstacle --single-version-externally-managed
+[4.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/followWall': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/followWall/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/followWall build --build-base /home/dcs/Desktop/Lab/Lab1/build/followWall/build install --record /home/dcs/Desktop/Lab/Lab1/build/followWall/install.log --install-scripts $base/lib/followWall --single-version-externally-managed
+[4.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/controller' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/controller/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/controller build --build-base /home/dcs/Desktop/Lab/Lab1/build/controller/build install --record /home/dcs/Desktop/Lab/Lab1/build/controller/install.log --install-scripts $base/lib/controller --single-version-externally-managed
+[4.087s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/controller' for CMake module files
+[4.087s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/controller' for CMake config files
+[4.088s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/controller/lib'
+[4.088s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/controller/bin'
+[4.088s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/controller/lib/pkgconfig/controller.pc'
+[4.088s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/controller/lib/python3.8/site-packages'
+[4.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[4.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/hook/pythonpath.ps1'
+[4.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/hook/pythonpath.dsv'
+[4.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/hook/pythonpath.sh'
+[4.114s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/controller/bin'
+[4.114s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[4.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/package.ps1'
+[4.138s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/package.dsv'
+[4.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/package.sh'
+[4.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/package.bash'
+[4.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/controller/share/controller/package.zsh'
+[4.140s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/controller/share/colcon-core/packages/controller)
+[4.141s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser' with build type 'ament_python'
+[4.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser', 'ament_prefix_path')
+[4.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/hook/ament_prefix_path.ps1'
+[4.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/hook/ament_prefix_path.dsv'
+[4.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/hook/ament_prefix_path.sh'
+[4.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/ClosedLoop_Obstacle' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ClosedLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/ClosedLoop_Obstacle/install.log --install-scripts $base/lib/ClosedLoop_Obstacle --single-version-externally-managed
+[4.342s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle' for CMake module files
+[4.342s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle' for CMake config files
+[4.343s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib'
+[4.343s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/bin'
+[4.343s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/pkgconfig/ClosedLoop_Obstacle.pc'
+[4.343s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/lib/python3.8/site-packages'
+[4.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('ClosedLoop_Obstacle', 'pythonpath')
+[4.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/hook/pythonpath.ps1'
+[4.365s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/hook/pythonpath.dsv'
+[4.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/hook/pythonpath.sh'
+[4.366s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/bin'
+[4.366s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ClosedLoop_Obstacle)
+[4.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/package.ps1'
+[4.397s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/package.dsv'
+[4.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/package.sh'
+[4.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/package.bash'
+[4.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/ClosedLoop_Obstacle/package.zsh'
+[4.399s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/ClosedLoop_Obstacle/share/colcon-core/packages/ClosedLoop_Obstacle)
+[4.399s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square' with build type 'ament_python'
+[4.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('move_square', 'ament_prefix_path')
+[4.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/hook/ament_prefix_path.ps1'
+[4.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/hook/ament_prefix_path.dsv'
+[4.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/hook/ament_prefix_path.sh'
+[4.444s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.444s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/OpenLoop_Obstacle' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/OpenLoop_Obstacle build --build-base /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/build install --record /home/dcs/Desktop/Lab/Lab1/build/OpenLoop_Obstacle/install.log --install-scripts $base/lib/OpenLoop_Obstacle --single-version-externally-managed
+[4.537s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle' for CMake module files
+[4.537s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle' for CMake config files
+[4.538s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib'
+[4.538s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/bin'
+[4.538s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/pkgconfig/OpenLoop_Obstacle.pc'
+[4.538s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/lib/python3.8/site-packages'
+[4.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('OpenLoop_Obstacle', 'pythonpath')
+[4.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/hook/pythonpath.ps1'
+[4.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/hook/pythonpath.dsv'
+[4.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/hook/pythonpath.sh'
+[4.561s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/bin'
+[4.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(OpenLoop_Obstacle)
+[4.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/package.ps1'
+[4.583s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/package.dsv'
+[4.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/package.sh'
+[4.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/package.bash'
+[4.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/OpenLoop_Obstacle/package.zsh'
+[4.584s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/OpenLoop_Obstacle/share/colcon-core/packages/OpenLoop_Obstacle)
+[4.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/followWall' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/followWall/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/followWall build --build-base /home/dcs/Desktop/Lab/Lab1/build/followWall/build install --record /home/dcs/Desktop/Lab/Lab1/build/followWall/install.log --install-scripts $base/lib/followWall --single-version-externally-managed
+[4.607s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/followWall' for CMake module files
+[4.607s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/followWall' for CMake config files
+[4.608s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/followWall/lib'
+[4.608s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/followWall/bin'
+[4.608s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/pkgconfig/followWall.pc'
+[4.608s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages'
+[4.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('followWall', 'pythonpath')
+[4.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/hook/pythonpath.ps1'
+[4.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/hook/pythonpath.dsv'
+[4.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/hook/pythonpath.sh'
+[4.630s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/followWall/bin'
+[4.630s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(followWall)
+[4.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/package.ps1'
+[4.653s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/package.dsv'
+[4.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/package.sh'
+[4.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/package.bash'
+[4.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/followWall/share/followWall/package.zsh'
+[4.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/followWall/share/colcon-core/packages/followWall)
+[4.655s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3' with build type 'ament_python'
+[4.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('move_turtlebot3', 'ament_prefix_path')
+[4.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/hook/ament_prefix_path.ps1'
+[4.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/hook/ament_prefix_path.dsv'
+[4.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/hook/ament_prefix_path.sh'
+[4.699s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.699s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.769s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg' with build type 'ament_python'
+[4.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg', 'ament_prefix_path')
+[4.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.ps1'
+[4.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.dsv'
+[4.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.sh'
+[4.815s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.815s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.046s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser'
+[5.070s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.070s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.312s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square'
+[5.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.336s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.569s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3'
+[5.603s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.603s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.833s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg'
+[5.856s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.856s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_square/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_square build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_square/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_square/install.log --install-scripts $base/lib/move_square --single-version-externally-managed
+[6.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_py_pkg build --build-base /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build install --record /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed
+[6.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/laser/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/laser build --build-base /home/dcs/Desktop/Lab/Lab1/build/laser/build install --record /home/dcs/Desktop/Lab/Lab1/build/laser/install.log --install-scripts $base/lib/laser --single-version-externally-managed
+[6.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/install.log --install-scripts $base/lib/move_turtlebot3 --single-version-externally-managed
+[6.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_turtlebot3' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_turtlebot3/install.log --install-scripts $base/lib/move_turtlebot3 --single-version-externally-managed
+[6.751s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3' for CMake module files
+[6.752s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3' for CMake config files
+[6.752s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib'
+[6.752s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/bin'
+[6.752s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/pkgconfig/move_turtlebot3.pc'
+[6.755s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/lib/python3.8/site-packages'
+[6.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('move_turtlebot3', 'pythonpath')
+[6.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/hook/pythonpath.ps1'
+[6.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/hook/pythonpath.dsv'
+[6.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/hook/pythonpath.sh'
+[6.782s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/bin'
+[6.782s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(move_turtlebot3)
+[6.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/package.ps1'
+[6.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/package.dsv'
+[6.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/package.sh'
+[6.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/package.bash'
+[6.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/move_turtlebot3/package.zsh'
+[6.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/move_turtlebot3/share/colcon-core/packages/move_turtlebot3)
+[6.807s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/noise' with build type 'ament_python'
+[6.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('noise', 'ament_prefix_path')
+[6.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/hook/ament_prefix_path.ps1'
+[6.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/hook/ament_prefix_path.dsv'
+[6.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/hook/ament_prefix_path.sh'
+[6.855s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.855s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/move_square' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/move_square/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/move_square build --build-base /home/dcs/Desktop/Lab/Lab1/build/move_square/build install --record /home/dcs/Desktop/Lab/Lab1/build/move_square/install.log --install-scripts $base/lib/move_square --single-version-externally-managed
+[6.950s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_square' for CMake module files
+[6.950s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_square' for CMake config files
+[6.951s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_square/lib'
+[6.951s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_square/bin'
+[6.951s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/pkgconfig/move_square.pc'
+[6.951s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_square/lib/python3.8/site-packages'
+[6.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('move_square', 'pythonpath')
+[6.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/hook/pythonpath.ps1'
+[6.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/hook/pythonpath.dsv'
+[6.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/hook/pythonpath.sh'
+[6.975s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/move_square/bin'
+[6.975s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(move_square)
+[6.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/package.ps1'
+[6.997s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/package.dsv'
+[6.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/package.sh'
+[6.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/package.bash'
+[6.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/move_square/share/move_square/package.zsh'
+[6.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/move_square/share/colcon-core/packages/move_square)
+[6.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_py_pkg build --build-base /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/build install --record /home/dcs/Desktop/Lab/Lab1/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed
+[7.021s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg' for CMake module files
+[7.021s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg' for CMake config files
+[7.022s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib'
+[7.022s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/bin'
+[7.022s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/pkgconfig/my_py_pkg.pc'
+[7.022s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/lib/python3.8/site-packages'
+[7.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg', 'pythonpath')
+[7.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.ps1'
+[7.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.dsv'
+[7.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.sh'
+[7.044s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/bin'
+[7.045s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_py_pkg)
+[7.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/package.ps1'
+[7.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/package.dsv'
+[7.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/package.sh'
+[7.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/package.bash'
+[7.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/my_py_pkg/package.zsh'
+[7.069s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/my_py_pkg/share/colcon-core/packages/my_py_pkg)
+[7.070s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/laser' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/laser/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/laser build --build-base /home/dcs/Desktop/Lab/Lab1/build/laser/build install --record /home/dcs/Desktop/Lab/Lab1/build/laser/install.log --install-scripts $base/lib/laser --single-version-externally-managed
+[7.092s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/laser' for CMake module files
+[7.092s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/laser' for CMake config files
+[7.093s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/laser/lib'
+[7.093s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/laser/bin'
+[7.093s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/laser/lib/pkgconfig/laser.pc'
+[7.093s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/laser/lib/python3.8/site-packages'
+[7.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser', 'pythonpath')
+[7.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/hook/pythonpath.ps1'
+[7.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/hook/pythonpath.dsv'
+[7.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/hook/pythonpath.sh'
+[7.116s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/laser/bin'
+[7.116s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(laser)
+[7.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/package.ps1'
+[7.137s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/package.dsv'
+[7.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/package.sh'
+[7.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/package.bash'
+[7.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/laser/share/laser/package.zsh'
+[7.138s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/laser/share/colcon-core/packages/laser)
+[7.139s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name' with build type 'ament_python'
+[7.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('package_name', 'ament_prefix_path')
+[7.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/hook/ament_prefix_path.ps1'
+[7.163s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/hook/ament_prefix_path.dsv'
+[7.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/hook/ament_prefix_path.sh'
+[7.186s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.186s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.258s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2' with build type 'ament_python'
+[7.258s] Level 1:colcon.colcon_core.shell:create_environment_hook('r2', 'ament_prefix_path')
+[7.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/hook/ament_prefix_path.ps1'
+[7.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/hook/ament_prefix_path.dsv'
+[7.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/hook/ament_prefix_path.sh'
+[7.304s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.305s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.390s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3' with build type 'ament_python'
+[7.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'ament_prefix_path')
+[7.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/hook/ament_prefix_path.ps1'
+[7.414s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/hook/ament_prefix_path.dsv'
+[7.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/hook/ament_prefix_path.sh'
+[7.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.665s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/noise'
+[7.689s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.689s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.919s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name'
+[7.942s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.942s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.171s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2'
+[8.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.423s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3'
+[8.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.447s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/noise': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/noise/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/noise build --build-base /home/dcs/Desktop/Lab/Lab1/build/noise/build install --record /home/dcs/Desktop/Lab/Lab1/build/noise/install.log --install-scripts $base/lib/noise --single-version-externally-managed
+[8.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/package_name/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/package_name build --build-base /home/dcs/Desktop/Lab/Lab1/build/package_name/build install --record /home/dcs/Desktop/Lab/Lab1/build/package_name/install.log --install-scripts $base/lib/package_name --single-version-externally-managed
+[8.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/r2/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/r2 build --build-base /home/dcs/Desktop/Lab/Lab1/build/r2/build install --record /home/dcs/Desktop/Lab/Lab1/build/r2/install.log --install-scripts $base/lib/r2 --single-version-externally-managed
+[9.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/install.log --install-scripts $base/lib/turtlebot3 --single-version-externally-managed
+[9.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/noise' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/noise/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/noise build --build-base /home/dcs/Desktop/Lab/Lab1/build/noise/build install --record /home/dcs/Desktop/Lab/Lab1/build/noise/install.log --install-scripts $base/lib/noise --single-version-externally-managed
+[9.295s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/noise' for CMake module files
+[9.296s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/noise' for CMake config files
+[9.296s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/noise/lib'
+[9.297s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/noise/bin'
+[9.297s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/noise/lib/pkgconfig/noise.pc'
+[9.297s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/noise/lib/python3.8/site-packages'
+[9.297s] Level 1:colcon.colcon_core.shell:create_environment_hook('noise', 'pythonpath')
+[9.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/hook/pythonpath.ps1'
+[9.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/hook/pythonpath.dsv'
+[9.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/hook/pythonpath.sh'
+[9.329s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/noise/bin'
+[9.329s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(noise)
+[9.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/package.ps1'
+[9.352s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/package.dsv'
+[9.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/package.sh'
+[9.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/package.bash'
+[9.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/noise/share/noise/package.zsh'
+[9.354s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/noise/share/colcon-core/packages/noise)
+[9.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/package_name' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/package_name/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/package_name build --build-base /home/dcs/Desktop/Lab/Lab1/build/package_name/build install --record /home/dcs/Desktop/Lab/Lab1/build/package_name/install.log --install-scripts $base/lib/package_name --single-version-externally-managed
+[9.377s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/package_name' for CMake module files
+[9.377s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/package_name' for CMake config files
+[9.378s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/package_name/lib'
+[9.378s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/package_name/bin'
+[9.378s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/package_name/lib/pkgconfig/package_name.pc'
+[9.378s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/package_name/lib/python3.8/site-packages'
+[9.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('package_name', 'pythonpath')
+[9.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/hook/pythonpath.ps1'
+[9.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/hook/pythonpath.dsv'
+[9.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/hook/pythonpath.sh'
+[9.401s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/package_name/bin'
+[9.401s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(package_name)
+[9.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/package.ps1'
+[9.422s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/package.dsv'
+[9.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/package.sh'
+[9.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/package.bash'
+[9.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/package_name/share/package_name/package.zsh'
+[9.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/package_name/share/colcon-core/packages/package_name)
+[9.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/turtlebot3' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/turtlebot3/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3 build --build-base /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/build install --record /home/dcs/Desktop/Lab/Lab1/build/turtlebot3/install.log --install-scripts $base/lib/turtlebot3 --single-version-externally-managed
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3' for CMake module files
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3' for CMake config files
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/bin'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[9.456s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/lib/python3.8/site-packages'
+[9.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'pythonpath')
+[9.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/hook/pythonpath.ps1'
+[9.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/hook/pythonpath.dsv'
+[9.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/hook/pythonpath.sh'
+[9.479s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/bin'
+[9.479s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[9.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/package.ps1'
+[9.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/package.dsv'
+[9.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/package.sh'
+[9.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/package.bash'
+[9.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/turtlebot3/package.zsh'
+[9.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[9.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dcs/Desktop/Lab/Lab1/ros2_ws/src/r2' returned '0': PYTHONPATH=/home/dcs/Desktop/Lab/Lab1/build/r2/prefix_override:/home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/r2 build --build-base /home/dcs/Desktop/Lab/Lab1/build/r2/build install --record /home/dcs/Desktop/Lab/Lab1/build/r2/install.log --install-scripts $base/lib/r2 --single-version-externally-managed
+[9.524s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/r2' for CMake module files
+[9.524s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/r2' for CMake config files
+[9.525s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/r2/lib'
+[9.525s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/r2/bin'
+[9.525s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/r2/lib/pkgconfig/r2.pc'
+[9.525s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/r2/lib/python3.8/site-packages'
+[9.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('r2', 'pythonpath')
+[9.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/hook/pythonpath.ps1'
+[9.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/hook/pythonpath.dsv'
+[9.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/hook/pythonpath.sh'
+[9.547s] Level 1:colcon.colcon_core.environment:checking '/home/dcs/Desktop/Lab/Lab1/install/r2/bin'
+[9.547s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(r2)
+[9.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/package.ps1'
+[9.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/package.dsv'
+[9.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/package.sh'
+[9.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/package.bash'
+[9.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/dcs/Desktop/Lab/Lab1/install/r2/share/r2/package.zsh'
+[9.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dcs/Desktop/Lab/Lab1/install/r2/share/colcon-core/packages/r2)
+[9.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.572s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.572s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.572s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.597s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.597s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.597s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.608s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.630s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dcs/Desktop/Lab/Lab1/install/local_setup.ps1'
+[9.631s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dcs/Desktop/Lab/Lab1/install/_local_setup_util_ps1.py'
+[9.632s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dcs/Desktop/Lab/Lab1/install/setup.ps1'
+[9.654s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dcs/Desktop/Lab/Lab1/install/local_setup.sh'
+[9.654s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dcs/Desktop/Lab/Lab1/install/_local_setup_util_sh.py'
+[9.655s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dcs/Desktop/Lab/Lab1/install/setup.sh'
+[9.677s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dcs/Desktop/Lab/Lab1/install/local_setup.bash'
+[9.678s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dcs/Desktop/Lab/Lab1/install/setup.bash'
+[9.700s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dcs/Desktop/Lab/Lab1/install/local_setup.zsh'
+[9.700s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dcs/Desktop/Lab/Lab1/install/setup.zsh'

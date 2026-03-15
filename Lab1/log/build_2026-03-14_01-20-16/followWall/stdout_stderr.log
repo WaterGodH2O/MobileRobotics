@@ -1,0 +1,22 @@
+running egg_info
+writing ../../../build/followWall/followWall.egg-info/PKG-INFO
+writing dependency_links to ../../../build/followWall/followWall.egg-info/dependency_links.txt
+writing entry points to ../../../build/followWall/followWall.egg-info/entry_points.txt
+writing requirements to ../../../build/followWall/followWall.egg-info/requires.txt
+writing top-level names to ../../../build/followWall/followWall.egg-info/top_level.txt
+reading manifest file '../../../build/followWall/followWall.egg-info/SOURCES.txt'
+writing manifest file '../../../build/followWall/followWall.egg-info/SOURCES.txt'
+running build
+running build_py
+copying followWall/__init__.py -> /home/dcs/Desktop/Lab/Lab1/build/followWall/build/lib/followWall
+running install
+running install_lib
+copying /home/dcs/Desktop/Lab/Lab1/build/followWall/build/lib/followWall/__init__.py -> /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall
+byte-compiling /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall/__init__.py to __init__.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../../build/followWall/followWall.egg-info to /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/python3.8/site-packages/followWall-0.0.0-py3.8.egg-info
+running install_scripts
+Installing follow_wall script to /home/dcs/Desktop/Lab/Lab1/install/followWall/lib/followWall
+writing list of installed files to '/home/dcs/Desktop/Lab/Lab1/build/followWall/install.log'
