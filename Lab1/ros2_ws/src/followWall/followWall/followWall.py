@@ -138,33 +138,23 @@ def turn_parallel_and_print_distances(args=None):
     cmd_vel_pub.publish(Twist())
     time.sleep(0.3)
 
-    # 等待至少一帧 scan
-    while rclpy.ok() and scan_msg_holder[0] is None:
-        rclpy.spin_once(node, timeout_sec=1.5)
-    msg = scan_msg_holder[0]
-    if msg is None:
-        node.get_logger().warn('No scan received, skipping distance print.')
-        node.destroy_node()
-        if rclpy.ok():
-            rclpy.shutdown()
-        return
 
-    # Front: 0, Left: 89, Back: 179, Right: 269
-    while(1):
+    # Front: 0, Left: 89, Back: 179, Right: 269 — 循环内每次 spin_once 取最新 scan 再打印
+    while rclpy.ok():
+        rclpy.spin_once(node, timeout_sec=0.1)
+        msg = scan_msg_holder[0]
+        if msg is None:
+            continue
         ranges = msg.ranges
         d_front = float(ranges[0])
         d_left = float(ranges[89])
         d_back = float(ranges[179])
         d_right = float(ranges[269])
-        time.sleep(1)
         node.get_logger().info(
             'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
         )
         print('Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right))
-
-    # node.destroy_node()
-    # if rclpy.ok():
-    #     rclpy.shutdown()
+        time.sleep(1)
 
 
 def follow_wall(args=None):
