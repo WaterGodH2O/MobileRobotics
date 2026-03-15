@@ -119,8 +119,8 @@ def turn_parallel_and_print_distances(args=None):
     scan_msg_holder = [None]
 
     def on_scan(msg: LaserScan):
-        if scan_msg_holder[0] is None:
-            scan_msg_holder[0] = msg
+
+        scan_msg_holder[0] = msg
 
     node.create_subscription(LaserScan, '/scan', on_scan, 10)
     node.get_logger().info('Turning left 90 deg to align parallel to wall...')
