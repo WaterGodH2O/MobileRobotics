@@ -20,7 +20,8 @@ TARGET_WALL_DISTANCE = 0.3   # (m) 期望与左侧墙的距离
 WALL_FOLLOW_KP = 3.0        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.02    # (m/s) 贴墙时前进速度
 MAX_ANGULAR = 1.0           # (rad/s) 角速度上限
-MAX_YAW_RAD = math.radians(35)  # 相对初始方向最大转向角 ±35°，防止打转
+MAX_YAW_RAD = math.radians(35)   # 任意 3 秒内最大转向角 ±35°，防止打转
+YAW_WINDOW_SEC = 3.0        # (s) 转向角限制的时间窗口
 SEGMENT_IDX = 249
 SEGMENT_END_IDX = 289
 
@@ -188,8 +189,8 @@ def follow_wall(args=None):
     node = Node('follow_wall_node')
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
     last_twist = [Twist()]  # 供定时器持续发布，保证车一直收到速度指令
-    accumulated_yaw = [0.0]  # 相对初始方向的累计转向角 (rad)
     last_time = [None]      # 上次 callback 时间，用于积分角速度
+    yaw_history = []        # [(timestamp, delta_yaw_rad), ...] 用于计算 3 秒内转向角
 
     right_buffer: deque = deque(maxlen=FILTER_SIZE)
     
@@ -222,14 +223,17 @@ def follow_wall(args=None):
             angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
             twist.angular.z = -angular
 
-            # 限制相对初始方向的转向角在 ±35° 内，防止打转
-            predicted_yaw = accumulated_yaw[0] + twist.angular.z * dt
+            # 限制：3 秒内的转向角不超过 ±35°
+            cutoff = now - YAW_WINDOW_SEC
+            yaw_history[:] = [(t, dy) for t, dy in yaw_history if t >= cutoff]
+            yaw_in_window = sum(dy for _, dy in yaw_history)
+            predicted_yaw = yaw_in_window + twist.angular.z * dt
             if predicted_yaw > MAX_YAW_RAD:
-                twist.angular.z = (MAX_YAW_RAD - accumulated_yaw[0]) / dt if dt > 0 else 0.0
+                twist.angular.z = (MAX_YAW_RAD - yaw_in_window) / dt if dt > 0 else 0.0
             elif predicted_yaw < -MAX_YAW_RAD:
-                twist.angular.z = (-MAX_YAW_RAD - accumulated_yaw[0]) / dt if dt > 0 else 0.0
+                twist.angular.z = (-MAX_YAW_RAD - yaw_in_window) / dt if dt > 0 else 0.0
             twist.angular.z = max(-MAX_ANGULAR, min(MAX_ANGULAR, twist.angular.z))
-            accumulated_yaw[0] += twist.angular.z * dt
+            yaw_history.append((now, twist.angular.z * dt))
         else:
             twist.angular.z = 0.0
         last_twist[0] = twist
