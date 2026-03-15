@@ -150,20 +150,21 @@ def turn_parallel_and_print_distances(args=None):
         return
 
     # Front: 0, Left: 89, Back: 179, Right: 269
-    ranges = msg.ranges
-    d_front = float(ranges[0])
-    d_left = float(ranges[89])
-    d_back = float(ranges[179])
-    d_right = float(ranges[269])
+    while(1):
+        ranges = msg.ranges
+        d_front = float(ranges[0])
+        d_left = float(ranges[89])
+        d_back = float(ranges[179])
+        d_right = float(ranges[269])
+        time.sleep(1)
+        node.get_logger().info(
+            'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
+        )
+        print('Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right))
 
-    node.get_logger().info(
-        'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
-    )
-    print('Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right))
-
-    node.destroy_node()
-    if rclpy.ok():
-        rclpy.shutdown()
+    # node.destroy_node()
+    # if rclpy.ok():
+    #     rclpy.shutdown()
 
 
 def follow_wall(args=None):
