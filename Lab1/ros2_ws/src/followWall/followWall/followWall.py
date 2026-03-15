@@ -190,18 +190,6 @@ def _min_valid_range(msg: LaserScan, start: int, end: int) -> float:
 
 
 def follow_wall(args=None):
-<<<<<<< HEAD
-    """贴墙行走：平时直行；检测到过近则执行 转开→前进→转回，再继续检测，避免边转边测。"""
-    rclpy.init(args=args)
-    node = Node('follow_wall_node')
-    cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
-    last_twist = [Twist()]  # 供定时器持续发布，保证车一直收到速度指令
-    state = ['follow']       # 'follow' | 'turn_away' | 'drive_forward' | 'turn_back'
-    state_start = [None]     # 当前状态开始时间
-
-    right_buffer: deque = deque(maxlen=FILTER_SIZE)
-
-=======
     """贴墙行走：同时控制「距离」与「平行度」。
     用右前、右后两路测距：
     - distance_error = desired - right_distance（右距用前后平均）
@@ -216,58 +204,12 @@ def follow_wall(args=None):
     right_front_buf: deque = deque(maxlen=FILTER_SIZE)
     right_back_buf: deque = deque(maxlen=FILTER_SIZE)
 
->>>>>>> d9ee53fb0ac74463870588b77cc09de64253dd4a
     def scan_callback(msg: LaserScan):
         now = time.time()
         if state_start[0] is None:
             state_start[0] = now
 
         twist = Twist()
-<<<<<<< HEAD
-        twist.linear.x = 0.0
-        twist.angular.z = 0.0
-
-        # right = 190~350 范围内有效测距的最小值
-        segment = [float(msg.ranges[i]) for i in range(SEGMENT_IDX, SEGMENT_END_IDX) if i < len(msg.ranges)]
-        valid = [r for r in segment if r == r and r != float('inf')]
-        right = min(valid) if valid else float('inf')
-        right_buffer.append(right)
-        filtered_right = median_filter(right_buffer)
-
-        elapsed = now - state_start[0]
-
-        if state[0] == 'follow':
-            # 平时直行；仅当有效且过近时进入“转开”序列
-            twist.linear.x = WALL_FOLLOW_LINEAR
-            if filtered_right != float('inf') and filtered_right == filtered_right:
-                if filtered_right < TARGET_WALL_DISTANCE:
-                    state[0] = 'turn_away'
-                    state_start[0] = now
-
-        elif state[0] == 'turn_away':
-            twist.angular.z = TURN_AWAY_ANGULAR  # 左转远离墙
-            if elapsed >= TURN_AWAY_DURATION:
-                state[0] = 'drive_forward'
-                state_start[0] = now
-
-        elif state[0] == 'drive_forward':
-            twist.linear.x = WALL_FOLLOW_LINEAR
-            if elapsed >= DRIVE_FORWARD_DURATION:
-                state[0] = 'turn_back'
-                state_start[0] = now
-
-        elif state[0] == 'turn_back':
-            twist.angular.z = -TURN_AWAY_ANGULAR  # 转回
-            if elapsed >= TURN_BACK_DURATION:
-                state[0] = 'follow'
-                state_start[0] = now
-
-        last_twist[0] = twist
-        cmd_vel_pub.publish(twist)
-        node.get_logger().info(
-            'right=%.3f state=%s' % (right if right != float('inf') else -1.0, state[0])
-        )
-=======
         twist.linear.x = WALL_FOLLOW_LINEAR
 
         right_front_raw = _min_valid_range(msg, RIGHT_FRONT_IDX_START, RIGHT_FRONT_IDX_END)
@@ -295,7 +237,6 @@ def follow_wall(args=None):
 
         last_twist[0] = twist
         cmd_vel_pub.publish(twist)
->>>>>>> d9ee53fb0ac74463870588b77cc09de64253dd4a
 
     def timer_callback():
         cmd_vel_pub.publish(last_twist[0])
@@ -303,14 +244,9 @@ def follow_wall(args=None):
     node.create_subscription(LaserScan, '/scan', scan_callback, 10)
     node.create_timer(0.05, timer_callback)
     node.get_logger().info(
-<<<<<<< HEAD
-        'Wall follow: target=%.2fm, on-too-close: turn_away(%.1fs)->drive(%.1fs)->turn_back(%.1fs)' % (
-            TARGET_WALL_DISTANCE, TURN_AWAY_DURATION, DRIVE_FORWARD_DURATION, TURN_BACK_DURATION)
-=======
         'Wall follow (distance+parallel): target=%.2fm, K_DIST=%.2f, K_ANGLE=%.2f' % (
             TARGET_WALL_DISTANCE, K_DIST, K_ANGLE
         )
->>>>>>> d9ee53fb0ac74463870588b77cc09de64253dd4a
     )
     try:
         rclpy.spin(node)
