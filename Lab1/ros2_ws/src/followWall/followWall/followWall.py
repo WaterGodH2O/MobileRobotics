@@ -9,17 +9,17 @@ from geometry_msgs.msg import Twist
 
 
 # --- Closed-loop: P control to stop smoothly at target distance (scan only, no odom) ---
-TARGET_DISTANCE = 0.25        # (m) stop at this distance from obstacle
+TARGET_DISTANCE = 0.3        # (m) stop at this distance from obstacle
 KP = 0.4                     # P gain: adjust for smooth, neither sluggish nor jerky
 MAX_LINEAR_SPEED = 0.6       # (m/s) cap forward speed
 FILTER_SIZE = 5              # number of recent scans for median filter (reject bad readings)
 FRONT_IDX = 0
 
 # --- 贴墙行走：目标离墙间距（左测距）---
-TARGET_WALL_DISTANCE = 0.25   # (m) 期望与左侧墙的距离
+TARGET_WALL_DISTANCE = 0.3   # (m) 期望与左侧墙的距离
 WALL_FOLLOW_KP = 2.0        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.03    # (m/s) 贴墙时前进速度
-MAX_ANGULAR = 0.8           # (rad/s) 角速度上限
+MAX_ANGULAR = 1.0           # (rad/s) 角速度上限
 
 
 
@@ -182,7 +182,7 @@ def follow_wall(args=None):
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
         # right = 190~350 范围内有效测距的最小值
-        segment = [float(msg.ranges[i]) for i in range(239, 299) if i < len(msg.ranges)]
+        segment = [float(msg.ranges[i]) for i in range(249, 289) if i < len(msg.ranges)]
         valid = [r for r in segment if r == r and r != float('inf')]
         right = min(valid) if valid else float('inf')
 
