@@ -15,6 +15,12 @@ MAX_LINEAR_SPEED = 0.6       # (m/s) cap forward speed
 FILTER_SIZE = 5              # number of recent scans for median filter (reject bad readings)
 FRONT_IDX = 0
 
+# --- 贴墙行走：目标离墙间距（左测距）---
+TARGET_WALL_DISTANCE = 0.2   # (m) 期望与左侧墙的距离
+WALL_FOLLOW_KP = 0.8        # 左距偏差 -> 角速度 增益
+WALL_FOLLOW_LINEAR = 0.2    # (m/s) 贴墙时前进速度
+MAX_ANGULAR = 0.5           # (rad/s) 角速度上限
+
 
 
 
@@ -147,9 +153,43 @@ def turn_parallel_and_print_distances(args=None):
         rclpy.shutdown()
 
 
+def follow_wall(args=None):
+    """贴墙行走：左距过大向左轻微转向，过小向右轻微转向，保持 TARGET_WALL_DISTANCE。"""
+    rclpy.init(args=args)
+    node = Node('follow_wall_node')
+    cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
+
+    def scan_callback(msg: LaserScan):
+        left = float(msg.ranges[89])
+        if left == float('inf') or left != left:
+            return
+        error = left - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
+        angular = WALL_FOLLOW_KP * error
+        angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
+        twist = Twist()
+        twist.linear.x = WALL_FOLLOW_LINEAR
+        twist.angular.z = angular
+        cmd_vel_pub.publish(twist)
+
+    node.create_subscription(LaserScan, '/scan', scan_callback, 10)
+    node.get_logger().info(
+        'Wall follow: target left=%.2fm, Kp=%.2f' % (TARGET_WALL_DISTANCE, WALL_FOLLOW_KP)
+    )
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        cmd_vel_pub.publish(Twist())
+        node.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
+
+
 def main(args=None):
     init_to_wall(args)
     turn_parallel_and_print_distances(args)
+    follow_wall(args)
 
 
 if __name__ == '__main__':
