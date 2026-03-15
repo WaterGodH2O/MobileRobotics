@@ -17,7 +17,7 @@ FRONT_IDX = 0
 
 # --- 贴墙行走：目标离墙间距（左测距）---
 TARGET_WALL_DISTANCE = 0.3   # (m) 期望与左侧墙的距离
-WALL_FOLLOW_KP = 5.0        # 左距偏差 -> 角速度 增益
+WALL_FOLLOW_KP = 3.0        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.03    # (m/s) 贴墙时前进速度
 MAX_ANGULAR = 1.0           # (rad/s) 角速度上限
 
@@ -207,9 +207,9 @@ def follow_wall(args=None):
         d_front = float(ranges[0])
         d_left = float(ranges[89])
         d_back = float(ranges[179])
-        d_right = float(ranges[269])
+        d_right = right
         node.get_logger().info(
-            'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
+            'Four directions (m):  right=%.3f' % (d_front, d_left, d_back, d_right)
         )
 
     def timer_callback():
