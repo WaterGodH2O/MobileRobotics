@@ -15,11 +15,18 @@ MAX_LINEAR_SPEED = 0.6       # (m/s) cap forward speed
 FILTER_SIZE = 5              # number of recent scans for median filter (reject bad readings)
 FRONT_IDX = 0
 
-# --- 贴墙行走：目标离墙间距（左测距）---
-TARGET_WALL_DISTANCE = 0.3   # (m) 期望与左侧墙的距离
-WALL_FOLLOW_KP = 3.0        # 左距偏差 -> 角速度 增益
-WALL_FOLLOW_LINEAR = 0.03    # (m/s) 贴墙时前进速度
-MAX_ANGULAR = 1.0           # (rad/s) 角速度上限
+# --- 贴墙行走：同时控制「距离」和「平行度」（右墙）---
+TARGET_WALL_DISTANCE = 0.3   # (m) 期望与右侧墙的距离
+WALL_FOLLOW_LINEAR = 0.1     # (m/s) 贴墙时前进速度
+# 右前/右后激光索引（360 点：0=前，90=左，180=后，270=右）
+RIGHT_BACK_IDX_START = 250   # 右后段 250°~270°（右侧靠车尾）
+RIGHT_BACK_IDX_END = 270
+RIGHT_FRONT_IDX_START = 270  # 右前段 270°~290°（右侧靠车头）
+RIGHT_FRONT_IDX_END = 290
+# 控制律: angular.z = K_DIST * distance_error - K_ANGLE * angle_error
+K_DIST = 2.0                 # 距离误差 -> 角速度（正：离墙近则左转）
+K_ANGLE = 1.5                # 平行度误差 -> 角速度（右前>右后 则右转贴墙）
+MAX_ANGULAR = 1.0            # (rad/s) 角速度上限
 
 
 
@@ -169,54 +176,67 @@ def median_filter(buf: deque) -> float:
     valid = sorted(valid)
     return valid[len(valid) // 2]
 
+def _min_valid_range(msg: LaserScan, start: int, end: int) -> float:
+    """取 [start, end) 索引范围内有效测距的最小值。"""
+    segment = [float(msg.ranges[i]) for i in range(start, min(end, len(msg.ranges)))]
+    valid = [r for r in segment if r == r and r != float('inf')]
+    return min(valid) if valid else float('inf')
+
+
 def follow_wall(args=None):
-    """贴墙行走：持续前进，左距过大向左轻微转向，过小向右轻微转向，保持 TARGET_WALL_DISTANCE。"""
+    """贴墙行走：同时控制「距离」与「平行度」。
+    用右前、右后两路测距：
+    - distance_error = desired - right_distance（右距用前后平均）
+    - angle_error = right_front - right_back（前后差表示姿态偏角）
+    控制律: angular.z = K_DIST * distance_error - K_ANGLE * angle_error
+    """
     rclpy.init(args=args)
     node = Node('follow_wall_node')
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
-    last_twist = [Twist()]  # 供定时器持续发布，保证车一直收到速度指令
+    last_twist = [Twist()]
 
-    right_buffer: deque = deque(maxlen=FILTER_SIZE)
-    
+    right_front_buf: deque = deque(maxlen=FILTER_SIZE)
+    right_back_buf: deque = deque(maxlen=FILTER_SIZE)
+
     def scan_callback(msg: LaserScan):
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
-        # right = 190~350 范围内有效测距的最小值
-        segment = [float(msg.ranges[i]) for i in range(249, 289) if i < len(msg.ranges)]
-        valid = [r for r in segment if r == r and r != float('inf')]
-        right = min(valid) if valid else float('inf')
 
+        right_front_raw = _min_valid_range(msg, RIGHT_FRONT_IDX_START, RIGHT_FRONT_IDX_END)
+        right_back_raw = _min_valid_range(msg, RIGHT_BACK_IDX_START, RIGHT_BACK_IDX_END)
 
-        
-        right_buffer.append(right)
+        right_front_buf.append(right_front_raw)
+        right_back_buf.append(right_back_raw)
+        right_front = median_filter(right_front_buf)
+        right_back = median_filter(right_back_buf)
 
-        filtered_right = median_filter(right_buffer)
-        if filtered_right != float('inf') and filtered_right == filtered_right:  # 有效
-            error = filtered_right - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
-
-
-            angular = WALL_FOLLOW_KP * error
+        if right_front != float('inf') and right_back != float('inf'):
+            right_distance = (right_front + right_back) / 2.0
+            distance_error = TARGET_WALL_DISTANCE - right_distance
+            angle_error = right_front - right_back
+            angular = K_DIST * distance_error - K_ANGLE * angle_error
             angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
-            twist.angular.z = -angular
+            twist.angular.z = angular
+            node.get_logger().info(
+                'right_front=%.3f right_back=%.3f dist_err=%.3f angle_err=%.3f ang=%.3f' % (
+                    right_front, right_back, distance_error, angle_error, angular
+                )
+            )
         else:
             twist.angular.z = 0.0
+
         last_twist[0] = twist
         cmd_vel_pub.publish(twist)
-
-        ranges = msg.ranges
-
-        d_right = right
-        node.get_logger().info(
-            'Four directions (m):  right=%.3f' % (d_right)
-        )
 
     def timer_callback():
         cmd_vel_pub.publish(last_twist[0])
 
     node.create_subscription(LaserScan, '/scan', scan_callback, 10)
-    node.create_timer(0.05, timer_callback)  # 20Hz 持续发布，保证车持续动
+    node.create_timer(0.05, timer_callback)
     node.get_logger().info(
-        'Wall follow: target left=%.2fm, Kp=%.2f' % (TARGET_WALL_DISTANCE, WALL_FOLLOW_KP)
+        'Wall follow (distance+parallel): target=%.2fm, K_DIST=%.2f, K_ANGLE=%.2f' % (
+            TARGET_WALL_DISTANCE, K_DIST, K_ANGLE
+        )
     )
     try:
         rclpy.spin(node)
