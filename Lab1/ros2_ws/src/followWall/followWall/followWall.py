@@ -1,3 +1,4 @@
+import math
 import threading
 import time
 import rclpy
@@ -86,14 +87,69 @@ def init_to_wall(args=None):
             rclpy.shutdown()
 
 
+# --- 转向并打印四向距离 ---
+TURN_ANGULAR_SPEED = 0.5   # rad/s，左转为正
+TURN_ANGLE_LEFT = math.pi / 2   # 左转 90° 与墙平行
+
+
+def turn_parallel_and_print_distances(args=None):
+    """init_to_wall 之后：左转 90° 与墙平行，然后打印前/左/后/右四向距离。"""
+    rclpy.init(args=args)
+    node = Node('follow_wall_node')
+    cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
+    scan_msg_holder = [None]
+
+    def on_scan(msg: LaserScan):
+        if scan_msg_holder[0] is None:
+            scan_msg_holder[0] = msg
+
+    node.create_subscription(LaserScan, '/scan', on_scan, 10)
+    node.get_logger().info('Turning left 90 deg to align parallel to wall...')
+
+    # 左转 90°
+    turn_duration = TURN_ANGLE_LEFT / TURN_ANGULAR_SPEED
+    start = time.time()
+    while rclpy.ok() and (time.time() - start) < turn_duration:
+        twist = Twist()
+        twist.angular.z = TURN_ANGULAR_SPEED
+        cmd_vel_pub.publish(twist)
+        rclpy.spin_once(node, timeout_sec=0.02)
+        time.sleep(0.02)
+    # 停止转动
+    cmd_vel_pub.publish(Twist())
+    time.sleep(0.3)
+
+    # 等待至少一帧 scan
+    while rclpy.ok() and scan_msg_holder[0] is None:
+        rclpy.spin_once(node, timeout_sec=0.1)
+    msg = scan_msg_holder[0]
+    if msg is None:
+        node.get_logger().warn('No scan received, skipping distance print.')
+        node.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
+        return
+
+    # Front: 0, Left: 89, Back: 179, Right: 269
+    ranges = msg.ranges
+    d_front = float(ranges[0])
+    d_left = float(ranges[89])
+    d_back = float(ranges[179])
+    d_right = float(ranges[269])
+
+    node.get_logger().info(
+        'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
+    )
+    print('Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right))
+
+    node.destroy_node()
+    if rclpy.ok():
+        rclpy.shutdown()
 
 
 def main(args=None):
     init_to_wall(args)
-    
-
-    # node = Node('follow_wall_node')
-    print("Test 文本")
+    turn_parallel_and_print_distances(args)
 
 
 if __name__ == '__main__':
