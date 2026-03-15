@@ -16,7 +16,7 @@ FILTER_SIZE = 5              # number of recent scans for median filter (reject 
 FRONT_IDX = 0
 
 # --- 贴墙行走：目标离墙间距（左测距）---
-TARGET_WALL_DISTANCE = 0.2   # (m) 期望与左侧墙的距离
+TARGET_WALL_DISTANCE = 0.5   # (m) 期望与左侧墙的距离
 WALL_FOLLOW_KP = 0.8        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.2    # (m/s) 贴墙时前进速度
 MAX_ANGULAR = 0.5           # (rad/s) 角速度上限
@@ -213,7 +213,7 @@ def follow_wall(args=None):
 def main(args=None):
     init_to_wall(args)
     turn_parallel_and_print_distances(args)
-    # follow_wall(args)
+    follow_wall(args)
 
 
 if __name__ == '__main__':
