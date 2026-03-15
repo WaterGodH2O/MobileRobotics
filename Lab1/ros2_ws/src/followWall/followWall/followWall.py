@@ -182,7 +182,7 @@ def follow_wall(args=None):
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
         # right = 190~350 范围内有效测距的最小值
-        segment = [float(msg.ranges[i]) for i in range(190, 351) if i < len(msg.ranges)]
+        segment = [float(msg.ranges[i]) for i in range(239, 299) if i < len(msg.ranges)]
         valid = [r for r in segment if r == r and r != float('inf')]
         right = min(valid) if valid else float('inf')
 
