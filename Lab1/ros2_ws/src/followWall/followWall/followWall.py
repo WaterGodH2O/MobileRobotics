@@ -147,9 +147,7 @@ def turn_parallel_and_print_distances(args=None):
     time.sleep(0.3)
 
     rclpy.spin_once(node, timeout_sec=0.02)
-    segment = [float(msg.ranges[i]) for i in range(SEGMENT_IDX, SEGMENT_END_IDX) if i < len(msg.ranges)]
-    valid = [r for r in segment if r == r and r != float('inf')]
-    right = min(valid) if valid else float('inf')
+
 
 
     # # Front: 0, Left: 89, Back: 179, Right: 269 — 循环内每次 spin_once 取最新 scan 再打印
