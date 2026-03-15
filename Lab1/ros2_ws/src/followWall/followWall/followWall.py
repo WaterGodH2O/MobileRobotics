@@ -154,24 +154,31 @@ def turn_parallel_and_print_distances(args=None):
 
 
 def follow_wall(args=None):
-    """贴墙行走：左距过大向左轻微转向，过小向右轻微转向，保持 TARGET_WALL_DISTANCE。"""
+    """贴墙行走：持续前进，左距过大向左轻微转向，过小向右轻微转向，保持 TARGET_WALL_DISTANCE。"""
     rclpy.init(args=args)
     node = Node('follow_wall_node')
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
+    last_twist = [Twist()]  # 供定时器持续发布，保证车一直收到速度指令
 
     def scan_callback(msg: LaserScan):
-        left = float(msg.ranges[89])
-        if left == float('inf') or left != left:
-            return
-        error = left - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
-        angular = WALL_FOLLOW_KP * error
-        angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
-        twist.angular.z = angular
+        left = float(msg.ranges[89])
+        if left != float('inf') and left == left:  # 有效
+            error = left - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
+            angular = WALL_FOLLOW_KP * error
+            angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
+            twist.angular.z = angular
+        else:
+            twist.angular.z = 0.0
+        last_twist[0] = twist
         cmd_vel_pub.publish(twist)
 
+    def timer_callback():
+        cmd_vel_pub.publish(last_twist[0])
+
     node.create_subscription(LaserScan, '/scan', scan_callback, 10)
+    node.create_timer(0.05, timer_callback)  # 20Hz 持续发布，保证车持续动
     node.get_logger().info(
         'Wall follow: target left=%.2fm, Kp=%.2f' % (TARGET_WALL_DISTANCE, WALL_FOLLOW_KP)
     )
