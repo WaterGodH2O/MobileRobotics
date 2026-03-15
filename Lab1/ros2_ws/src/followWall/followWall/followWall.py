@@ -19,7 +19,7 @@ FRONT_IDX = 0
 TARGET_WALL_DISTANCE = 0.5   # (m) 期望与左侧墙的距离
 WALL_FOLLOW_KP = 2.0        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.03    # (m/s) 贴墙时前进速度
-MAX_ANGULAR = 3.14           # (rad/s) 角速度上限
+MAX_ANGULAR = 2.0           # (rad/s) 角速度上限
 
 
 
@@ -161,6 +161,14 @@ def turn_parallel_and_print_distances(args=None):
         rclpy.shutdown()
 
 
+def median_filter(buf: deque) -> float:
+    """Return median of buffered values; ignore inf."""
+    valid = [x for x in buf if x == x and x != float('inf')]
+    if not valid:
+        return float('inf')
+    valid = sorted(valid)
+    return valid[len(valid) // 2]
+
 def follow_wall(args=None):
     """贴墙行走：持续前进，左距过大向左轻微转向，过小向右轻微转向，保持 TARGET_WALL_DISTANCE。"""
     rclpy.init(args=args)
@@ -168,12 +176,19 @@ def follow_wall(args=None):
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
     last_twist = [Twist()]  # 供定时器持续发布，保证车一直收到速度指令
 
+    right_buffer: deque = deque(maxlen=FILTER_SIZE)
+    
     def scan_callback(msg: LaserScan):
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
         right = float(msg.ranges[269])
-        if right != float('inf') and right == right:  # 有效
-            error = right - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
+        right_buffer.append(right)
+        
+        filtered_right = median_filter(right_buffer)
+        if filtered_right != float('inf') and filtered_right == filtered_right:  # 有效
+            error = filtered_right - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
+
+
             angular = WALL_FOLLOW_KP * error
             angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
             twist.angular.z = -angular
