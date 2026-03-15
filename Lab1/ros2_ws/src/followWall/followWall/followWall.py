@@ -181,7 +181,13 @@ def follow_wall(args=None):
     def scan_callback(msg: LaserScan):
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
-        right = float(msg.ranges[269])
+        # right = 190~350 范围内有效测距的最小值
+        segment = [float(msg.ranges[i]) for i in range(190, 351) if i < len(msg.ranges)]
+        valid = [r for r in segment if r == r and r != float('inf')]
+        right = min(valid) if valid else float('inf')
+
+
+        
         right_buffer.append(right)
 
         filtered_right = median_filter(right_buffer)
