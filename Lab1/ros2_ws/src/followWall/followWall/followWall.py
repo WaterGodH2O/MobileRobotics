@@ -176,7 +176,7 @@ def follow_wall(args=None):
             error = right - TARGET_WALL_DISTANCE  # >0 离墙远，<0 离墙近
             angular = WALL_FOLLOW_KP * error
             angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
-            twist.angular.z = angular
+            twist.angular.z = -angular
         else:
             twist.angular.z = 0.0
         last_twist[0] = twist
