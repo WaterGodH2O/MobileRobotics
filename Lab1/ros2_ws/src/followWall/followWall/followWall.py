@@ -20,6 +20,7 @@ TARGET_WALL_DISTANCE = 0.3   # (m) 期望与左侧墙的距离
 WALL_FOLLOW_KP = 3.0        # 左距偏差 -> 角速度 增益
 WALL_FOLLOW_LINEAR = 0.02    # (m/s) 贴墙时前进速度
 MAX_ANGULAR = 1.0           # (rad/s) 角速度上限
+MAX_YAW_RAD = math.radians(35)  # 相对初始方向最大转向角 ±35°，防止打转
 SEGMENT_IDX = 249
 SEGMENT_END_IDX = 289
 
@@ -187,10 +188,20 @@ def follow_wall(args=None):
     node = Node('follow_wall_node')
     cmd_vel_pub = node.create_publisher(Twist, 'cmd_vel', 10)
     last_twist = [Twist()]  # 供定时器持续发布，保证车一直收到速度指令
+    accumulated_yaw = [0.0]  # 相对初始方向的累计转向角 (rad)
+    last_time = [None]      # 上次 callback 时间，用于积分角速度
 
     right_buffer: deque = deque(maxlen=FILTER_SIZE)
     
     def scan_callback(msg: LaserScan):
+        now = time.time()
+        if last_time[0] is None:
+            last_time[0] = now
+        dt = now - last_time[0]
+        last_time[0] = now
+        if dt <= 0 or dt > 1.0:
+            dt = 0.05  # 异常时使用定时器周期
+
         twist = Twist()
         twist.linear.x = WALL_FOLLOW_LINEAR
         # right = 190~350 范围内有效测距的最小值
@@ -210,6 +221,15 @@ def follow_wall(args=None):
             angular = WALL_FOLLOW_KP * error
             angular = max(-MAX_ANGULAR, min(MAX_ANGULAR, angular))
             twist.angular.z = -angular
+
+            # 限制相对初始方向的转向角在 ±35° 内，防止打转
+            predicted_yaw = accumulated_yaw[0] + twist.angular.z * dt
+            if predicted_yaw > MAX_YAW_RAD:
+                twist.angular.z = (MAX_YAW_RAD - accumulated_yaw[0]) / dt if dt > 0 else 0.0
+            elif predicted_yaw < -MAX_YAW_RAD:
+                twist.angular.z = (-MAX_YAW_RAD - accumulated_yaw[0]) / dt if dt > 0 else 0.0
+            twist.angular.z = max(-MAX_ANGULAR, min(MAX_ANGULAR, twist.angular.z))
+            accumulated_yaw[0] += twist.angular.z * dt
         else:
             twist.angular.z = 0.0
         last_twist[0] = twist
