@@ -145,11 +145,13 @@ def turn_parallel_and_print_distances(args=None):
     time.sleep(0.3)
 
     rclpy.spin_once(node, timeout_sec=0.02)
-    segment = [float(msg.ranges[i]) for i in range(SEGMENT_IDX, SEGMENT_END_IDX) if i < len(msg.ranges)]
-    valid = [r for r in segment if r == r and r != float('inf')]
-    right = min(valid) if valid else float('inf')
-
-    TARGET_WALL_DISTANCE = right
+    msg = scan_msg_holder[0]
+    if msg is not None:
+        segment = [float(msg.ranges[i]) for i in range(SEGMENT_IDX, SEGMENT_END_IDX) if i < len(msg.ranges)]
+        valid = [r for r in segment if r == r and r != float('inf')]
+        right = min(valid) if valid else float('inf')
+        TARGET_WALL_DISTANCE = right
+    # 未收到 scan 时保持原 TARGET_WALL_DISTANCE
     node.get_logger().info('Target wall distance set to: %.3f m' % TARGET_WALL_DISTANCE)
 
 
