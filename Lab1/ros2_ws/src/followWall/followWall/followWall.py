@@ -64,10 +64,10 @@ def init_to_wall(args=None):
                     node.get_logger().info('Target distance reached (%.2f m), exiting--.' % TARGET_DISTANCE)
                     # Shutdown from another thread so spin() can return (callback thread may not wake spin)
                     cmd_vel_pub.publish(Twist())
-                    d_front = float(ranges[0])
-                    d_left = float(ranges[89])
-                    d_back = float(ranges[179])
-                    d_right = float(ranges[269])
+                    d_front = float(msg.ranges[0])
+                    d_left = float(msg.ranges[89])
+                    d_back = float(msg.ranges[179])
+                    d_right = float(msg.ranges[269])
 
                     node.get_logger().info(
                     'Four directions (m): front=%.3f, left=%.3f, back=%.3f, right=%.3f' % (d_front, d_left, d_back, d_right)
